@@ -136,7 +136,7 @@ const Footer = () => {
       </Container>
       <Container className={classes.afterFooter}>
         <Text color="dimmed" size="sm">
-          © 2023 mPower Rating | All rights reserved.
+          © 2023 mPower Ratings | All rights reserved.
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
