@@ -15,7 +15,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2" onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
           <img src={logo} alt="logo" className="w-10 h-10 object-contain bg-[white] rounded-full" />
           <p className="text-secondary text-[18px] font-bold cursor-pointer flex">
-            <span><span className="text-tertiary">mpower</span>  ratings</span>
+            <span><span className="text-tertiary">mPower</span>  Ratings</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
