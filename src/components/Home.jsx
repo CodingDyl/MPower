@@ -1,9 +1,22 @@
+import {useState, useEffect} from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import Lottie from 'react-lottie'
 import animationData from '../lotties/teamwork.json'
 
 const Home = () => {
+
+  const [animationSize, setAnimationSize] = useState({ width: 500, height: 500 });
+
+  useEffect(() => {
+    // Adjust the size based on screen width
+    if (window.innerWidth <= 768) {
+      setAnimationSize({ width: 300, height: 300 });
+    } else {
+      setAnimationSize({ width: 500, height: 500 });
+    }
+  }, []);
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -27,8 +40,8 @@ const Home = () => {
           </div>
           </a>
         </div>
-        <Lottie options={defaultOptions} height={500}
-                width={500}/>
+        <Lottie options={defaultOptions} height={animationSize.height}
+                width={animationSize.width}/>
         </div>
       <div className="absolute xs:bottom-5 md:bottom-10 w-full flex justify-center items-center">
         <a href={`#about`}>
