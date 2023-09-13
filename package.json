@@ -12,6 +12,8 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@mantine/core": "^6.0.20",
+    "@mantine/hooks": "^6.0.20",
     "@mui/material": "^5.14.8",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
