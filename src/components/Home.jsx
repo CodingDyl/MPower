@@ -36,7 +36,7 @@ const Home = () => {
           <a href={`#services`}>
           <div className="flex justify-start gap-3 w-full pt-4">
             <button className='btn bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>Learn More</button>
-            <button className='btn bg-secondary py-3 px-8 rounded-xl outline-none w-fit text-primary font-bold shadow-md shadow-primary hover:opacity-100 !important'>Get a quote</button>
+            <button className='hover:opacity-100btn bg-primary py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important'>Get a quote</button>
           </div>
           </a>
         </div>
