@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     // Adjust the size based on screen width
     if (window.innerWidth <= 768) {
-      setAnimationSize({ width: 300, height: 300 });
+      setAnimationSize({ width: 200, height: 200 });
     } else {
       setAnimationSize({ width: 500, height: 500 });
     }
@@ -27,7 +27,7 @@ const Home = () => {
   };
   return (
     <section className="relative w-full h-screen mx-auto backdrop-blur-md">
-      <div className={`${styles.paddingX} absolute inset-0 xs:top-[100px] md:top-[200px] max-w-7xl md:flex sm:flex-col md:flex-row justify-center xs:items-center md:items-start mx-auto gap-5`}>
+      <div className={`${styles.paddingX} absolute inset-0 xs:top-[150px] md:top-[200px] max-w-7xl md:flex sm:flex-col md:flex-row justify-center xs:items-center md:items-start mx-auto gap-5`}>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Welcome to <br></br><span className="text-tertiary">MPower Rating</span></h1>
           <p className={`${styles.heroSubText} mt-4 text-white-100`}>
