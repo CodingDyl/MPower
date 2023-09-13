@@ -73,23 +73,23 @@ const navLinks = [
         },
         {
             label: "Impartiality Statement",
-            link: "https://echo4x4rentals.co.za/"
+            link: ""
         },
         {
             label: "B-BBEE Consulting",
-            link: "https://echo4x4centre.co.za/"
+            link: ""
         },
         {
             label: "B-BBEE Certificate",
-            link: "https://echo4x4adventure.co.za/"
+            link: ""
         },
         {
           label: "Accreditation",
-          link: "https://echo4x4adventure.co.za/"
+          link: ""
         },
         {
           label: "Youth Employment Service",
-          link: "https://echo4x4adventure.co.za/"
+          link: ""
         },
     ]
     },
@@ -97,19 +97,19 @@ const navLinks = [
         title: "Join Us",
         links: [ {
             label: "Discord",
-            link: "https://echo4x4.co.za/contact-us/"
+            link: ""
         },
         {
             label: "Facebook",
-            link: "https://www.facebook.com/Echo4x4/"
+            link: "https://www.facebook.com"
         },
         {
             label: "Instagram",
-            link: "https://www.instagram.com/echo4x4/"
+            link: "https://www.instagram.com"
         },
         {
             label: "Twitter",
-            link: "https://twitter.com/echo4x4"
+            link: "https://twitter.com"
         }
     ]
     }
