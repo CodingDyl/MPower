@@ -18,7 +18,7 @@ const Home = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Welcome to <br></br><span className="text-tertiary">MPower Rating</span></h1>
           <p className={`${styles.heroSubText} mt-4 text-white-100`}>
-            Your Trusted Partner for Streamlined Verification.
+            Ensuring change through Empowerment.
           </p>
           <a href={`#services`}>
           <div className="flex justify-start gap-3 w-full pt-4">
@@ -30,7 +30,7 @@ const Home = () => {
         <Lottie options={defaultOptions} height={500}
                 width={500}/>
         </div>
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-5 md:bottom-10 w-full flex justify-center items-center">
         <a href={`#about`}>
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-tertiary flex justify-center items-start p-2">
             <motion.div animate={{y: [0, 24, 0]}} transition={{duration: 1.5, repeat: Infinity, repeatType: 'loop' }} className="w-3 h-3 rounded-full bg-tertiary mb-1"/>
