@@ -4,13 +4,17 @@ const navLinks = [
       title: "About",
     },
     {
-      id: "services",
-      title: "Services",
+      id: "directory",
+      title: "BEE Directory",
+    },
+    {
+      id: "declarations",
+      title: "Declarations",
     },
     {
       id: "contact",
-      title: "Contact",
-    },
+      title: "Contact Us"
+    }
   ];
 
   export {navLinks};
