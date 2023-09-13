@@ -8,7 +8,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-white">
         <div className="bg-bg-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Home />
