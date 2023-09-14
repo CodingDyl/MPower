@@ -5,6 +5,7 @@ import About from "./components/About"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"
 import StarsCanvas from "./components/canvas/Stars.jsx"
+import Office from "./components/Office"
 import './index.css'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
+        <Office />
         <Footer />
       </div>
     </BrowserRouter>
