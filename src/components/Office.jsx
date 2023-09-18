@@ -55,7 +55,10 @@ const Office = () => {
                 </div>
             </motion.div>
 
-            <MapComponent className="xs:hidden md:block"/>
+            <motion.div variants={fadeIn("", "tween", 0.8, 1)} className="xs:hidden md:block">
+                <MapComponent />
+            </motion.div>
+
         </>
     );
 }
