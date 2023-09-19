@@ -23,9 +23,9 @@ const FAQ = () => {
                         <motion.div variants={fadeIn("right", "", 0.1, 1)}>
                             <Accordion label="What is Broad-Based Economic Empowerment?">
                                 <Accordion.Item value="What is Broad-Based Economic Empowerment?">
-                                    <Accordion.Control className="text-primary">What is Broad-Based Economic Empowerment?</Accordion.Control>
+                                    <Accordion.Control className="text-primary font-extrabold">What is Broad-Based Economic Empowerment?</Accordion.Control>
                                     <Accordion.Panel>
-                                        <p className="text-secondary">Black Economic Empowerment (BEE) or Broad-Based Economic Empowerment (BBBEE) is a programme initiated by the South African government to remedy the inequalities of the past, thus giving previously disadvantaged groups, which are South African citizens, economic inclusion – previously not available to them.</p>
+                                        <p className="text-primary">Black Economic Empowerment (BEE) or Broad-Based Economic Empowerment (BBBEE) is a programme initiated by the South African government to remedy the inequalities of the past, thus giving previously disadvantaged groups, which are South African citizens, economic inclusion – previously not available to them.</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
                             </Accordion>
@@ -35,11 +35,11 @@ const FAQ = () => {
                         <motion.div variants={fadeIn("right", "", 0.1, 1)}>
                             <Accordion label="What are the different BEE rating types?">
                                 <Accordion.Item value="What are the different BEE rating types?">
-                                    <Accordion.Control className="text-primary">What are the different BEE rating types?</Accordion.Control>
+                                    <Accordion.Control className="text-primary font-extrabold">What are the different BEE rating types?</Accordion.Control>
                                     <Accordion.Panel className="flex flex-col gap-4">
-                                        <p className="text-secondary">Exempt Micro Enterprise</p>
-                                        <p className="text-secondary">Qualifying Small Enterprises</p>
-                                        <p className="text-secondary">Generic Enterprises</p>
+                                        <p className="text-primary">Exempt Micro Enterprise</p>
+                                        <p className="text-primary">Qualifying Small Enterprises</p>
+                                        <p className="text-primary">Generic Enterprises</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
                             </Accordion>
@@ -49,9 +49,9 @@ const FAQ = () => {
                         <motion.div variants={fadeIn("right", "", 0.1, 1)}>
                             <Accordion label="How long does the verification process take?">
                                 <Accordion.Item value="How long does the verification process take?">
-                                    <Accordion.Control className="text-primary">How long does the verification process take?</Accordion.Control>
+                                    <Accordion.Control className="text-primary font-extrabold">How long does the verification process take?</Accordion.Control>
                                     <Accordion.Panel>
-                                        <p className="text-secondary">Ideally 4-6 weeks (dependent on data submitted).
+                                        <p className="text-primary">Ideally 4-6 weeks (dependent on data submitted).
                                             There is an ability to do urgent verifications in just 2-3 weeks if required.</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
@@ -62,9 +62,9 @@ const FAQ = () => {
                         <motion.div variants={fadeIn("right", "", 0.1, 1)}>
                             <Accordion label="Can I obtain a PDF version of my certificate to upload on my website?">
                                 <Accordion.Item value="Can I obtain a PDF version of my certificate to upload on my website?">
-                                    <Accordion.Control className="text-primary">Can I obtain a PDF version of my certificate ?</Accordion.Control>
+                                    <Accordion.Control className="text-primary font-extrabold">Can I obtain a PDF version of my certificate ?</Accordion.Control>
                                     <Accordion.Panel>
-                                        <p className="text-secondary">Yes.</p>
+                                        <p className="text-primary">Yes.</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
                             </Accordion>
