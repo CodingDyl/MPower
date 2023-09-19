@@ -7,6 +7,7 @@ import Contact from "./components/Contact"
 import StarsCanvas from "./components/canvas/Stars.jsx"
 import Office from "./components/Office"
 import './index.css'
+import FAQ from "./components/FAQ.jsx";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Home />
         </div>
         <About />
+        <FAQ />
         <div className="relative z-0 bg-black-100">
           <Contact />
           <StarsCanvas />
