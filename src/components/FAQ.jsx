@@ -70,6 +70,35 @@ const FAQ = () => {
                             </Accordion>
                         </motion.div>
                     </Grid.Col>
+                    <Grid.Col span={12} md={6}>
+                        <motion.div variants={fadeIn("right", "", 0.1, 1)}>
+                            <Accordion label="What are the different products you offer?">
+                                <Accordion.Item value="What are the different products you offer?">
+                                    <Accordion.Control className="text-primary font-extrabold">What are the different products you offer?</Accordion.Control>
+                                    <Accordion.Panel className="flex flex-col gap-4">
+                                        <p className="text-primary">Exempt Micro Enterprise</p>
+                                        <p className="text-primary">Qualifying Small Enterprises</p>
+                                        <p className="text-primary">Generic Enterprises</p>
+                                    </Accordion.Panel>
+                                </Accordion.Item>
+                            </Accordion>
+                        </motion.div>
+                    </Grid.Col>
+                    <Grid.Col span={12} md={6}>
+                        <motion.div variants={fadeIn("right", "", 0.1, 1)}>
+                            <Accordion label="Where can we find you ?">
+                                <Accordion.Item value="Where can we find you ?">
+                                    <Accordion.Control className="text-primary font-extrabold">Where can we find you?</Accordion.Control>
+                                    <Accordion.Panel>
+                                        <p className="text-primary">99 Jan Smuts Avenue,
+                                            Saxonwold,
+                                            2196,
+                                            Johannesburg</p>
+                                    </Accordion.Panel>
+                                </Accordion.Item>
+                            </Accordion>
+                        </motion.div>
+                    </Grid.Col>
                 </Grid>
             </motion.div>
         </>
