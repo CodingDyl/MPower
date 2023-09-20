@@ -33,12 +33,10 @@ const Home = () => {
           <p className={`${styles.heroSubText} mt-4 text-secondary`}>
             Ensuring change through Empowerment.
           </p>
-          <a href={`#services`}>
           <div className="flex justify-start gap-3 w-full pt-4">
-            <button className='btn bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>Learn More</button>
+            <a href={`#faq`}><button className='btn bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>Learn More</button></a>
             <button className='hover:opacity-100btn bg-primary py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important'>Get a quote</button>
           </div>
-          </a>
         </div>
         <Lottie options={defaultOptions} height={animationSize.height}
                 width={animationSize.width}/>
