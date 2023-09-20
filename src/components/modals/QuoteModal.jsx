@@ -107,7 +107,7 @@ function QuoteModal({ opened, close }) {
                                     <TextInput
                                         required
                                         label="Company"
-                                        placeholder="Your Company"
+                                        placeholder="Your company name"
                                         value={form.values.company}
                                         onChange={(event) =>
                                             form.setFieldValue("company", event.currentTarget.value)
@@ -125,7 +125,7 @@ function QuoteModal({ opened, close }) {
                                         className="rounded-md p-2 bg-transparent border-solid border-[1px] border-primary"
                                     >
                                         <option value="" disabled>
-                                            Select your quote
+                                            Select quote type
                                         </option>
                                         {quoteTypeOptions.map((option, index) => (
                                             <option key={index} value={option}>
