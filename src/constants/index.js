@@ -59,11 +59,13 @@ const navLinks = [
   const footerLinks = [
     {
         title: "About",
-        links: [{ label: "who we are", link: "" },
-        { label: "certificate", link: "" },
-        { label: "accreditation", link: "" },
-        { label: "contact", link: "" }
-    ]
+        links: [
+            { label: "who we are", link: "#about" },
+            { label: "certificate", link: "" },
+            { label: "accreditation", link: "" },
+            { label: "contact", link: "#contact" },
+            { label: "faq", link: '#faq'}
+        ]
     },
     {
         title: "Declarations",
@@ -97,7 +99,7 @@ const navLinks = [
         title: "Join Us",
         links: [ {
             label: "Discord",
-            link: ""
+            link: "https://www.facebook.com"
         },
         {
             label: "Facebook",
