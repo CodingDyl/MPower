@@ -3,10 +3,17 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import Lottie from 'react-lottie'
 import animationData from '../lotties/teamwork.json'
+import QuoteModal from "./modals/QuoteModal.jsx";
 
 const Home = () => {
 
+  const [open, setOpen] = useState(false);
+
   const [animationSize, setAnimationSize] = useState({ width: 500, height: 500 });
+
+  const handleQuote = () => {
+    setOpen(!open);
+  }
 
   useEffect(() => {
     // Adjust the size based on screen width
@@ -35,7 +42,7 @@ const Home = () => {
           </p>
           <div className="flex justify-start gap-3 w-full pt-4">
             <a href={`#faq`}><button className='btn bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>Learn More</button></a>
-            <button className='hover:opacity-100btn bg-primary py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important'>Get a quote</button>
+            <button onClick={handleQuote} className='hover:opacity-100btn bg-primary py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important'>Get a quote</button>
           </div>
         </div>
         <Lottie options={defaultOptions} height={animationSize.height}
@@ -48,6 +55,7 @@ const Home = () => {
           </div>
         </a>
       </div>
+      <QuoteModal opened={open} close={() => setOpen(false)} />
     </section>
   )
 }
