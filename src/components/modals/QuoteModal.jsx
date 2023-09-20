@@ -57,7 +57,7 @@ function QuoteModal({ opened, close }) {
             >
                 <Paper radius="md" p="xl" withBorder>
                     <Text size="lg" weight={500} mb={15} fw={700}>
-                        Welcome to mPower Ratings
+                        Enter your quote request details below to be contacted by mPowerRatings.
                     </Text>
 
                     <form
