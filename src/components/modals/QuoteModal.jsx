@@ -80,6 +80,7 @@ function QuoteModal({ opened, close }) {
                                         />
 
                                         <TextInput
+                                            required
                                             label="Email Address"
                                             placeholder="Your email address"
                                             value={form.values.emailAddress}
@@ -99,7 +100,7 @@ function QuoteModal({ opened, close }) {
                                         placeholder="Your contact number"
                                         value={form.values.contactNumber}
                                         onChange={(event) =>
-                                            form.setFieldValue("contact", event.currentTarget.value)
+                                            form.setFieldValue("contactNumber", event.currentTarget.value)
                                         }
                                         radius="md"
                                     />
