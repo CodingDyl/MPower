@@ -40,7 +40,7 @@ const About = () => {
         <>
           <motion.div variants={textVariant}>
             <p className={styles.sectionSubText}>Introduction</p>
-            <h2 className={styles.sectionHeadText}>About <span className="text-tertiary">mPower</span> Ratings</h2>
+            <h2 className={styles.sectionHeadText}>About <span className="text-tertiary">mPowerRatings</span></h2>
           </motion.div>
           <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-primary text-[17px] max-w-3xl leading-[30px]">
           mPowerRatings was established in 2003 to serve the BEE requirements of South African corporates in a practical and efficient manner. It was the first business of its kind to provide BEE services through the internet when it launched its website www.mpowerratings.co.za in 2004.
