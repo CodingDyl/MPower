@@ -36,13 +36,13 @@ const Home = () => {
     <section className="relative w-full h-screen mx-auto backdrop-blur-md">
       <div className={`${styles.paddingX} absolute inset-0 top-[200px] max-w-7xl md:flex sm:flex-col md:flex-row justify-center xs:items-center md:items-start mx-auto gap-5`}>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Welcome to <br></br><span className="text-tertiary">mPower Ratings</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>Welcome to <br></br><span className="text-tertiary">mPowerRatings</span></h1>
           <p className={`${styles.heroSubText} mt-4 text-secondary`}>
             Ensuring change through Empowerment.
           </p>
           <div className="flex justify-start gap-3 w-full pt-4">
             <a href={`#faq`}><button className='btn bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>Learn More</button></a>
-            <button onClick={handleQuote} className='hover:opacity-100btn bg-primary py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important'>Get a quote</button>
+            <button onClick={handleQuote} className='hover:opacity-100btn bg-white-100 py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important'>Get a quote</button>
           </div>
         </div>
         <Lottie options={defaultOptions} height={animationSize.height}

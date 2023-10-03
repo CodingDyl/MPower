@@ -60,7 +60,7 @@ const useStyles = createStyles((theme) => ({
   
     link: {
       display: 'block',
-      color: '#039BE5',
+      color: '#334367',
       fontSize: theme.fontSizes.sm,
       paddingTop: rem(3),
       paddingBottom: rem(3),
