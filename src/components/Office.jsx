@@ -48,10 +48,7 @@ const Office = () => {
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconLocation />
                     </div>
-                    <Typography>99 Jan Smuts Avenue,
-                        Saxonwold,
-                        2196,
-                        Johannesburg</Typography>
+                    <Typography>The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196</Typography>
                 </div>
             </motion.div>
 

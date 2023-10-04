@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 function MapComponent() {
-    const position = [-26.158920, 28.034550]; // Replace with building's address coordinates
+    const position = [-26.146230, 28.044050]; // Replace with building's address coordinates
 
     return (
         <MapContainer center={position} zoom={14} style={{ width: '100%', height: '400px' }} dragging={false} // Disable map dragging

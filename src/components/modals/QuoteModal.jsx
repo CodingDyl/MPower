@@ -46,11 +46,11 @@ function QuoteModal({ opened, close }) {
                 onClose={close}
                 title="Quotes"
                 styles={{
-                    body: { backgroundColor: "#555555" },
-                    header: { backgroundColor: "#555555", color: "#039BE5" },
+                    body: { backgroundColor: "#334367" },
+                    header: { backgroundColor: "#334367", color: "#f3f3f3" },
                     close: {
-                        color: "#039BE5",
-                        "&:hover": { background: "#039BE5", color: "#555555" },
+                        color: "#f3f3f3",
+                        "&:hover": { background: "#f3f3f3", color: "#334367" },
                     },
                     overlay: { backdropFilter: "blur(5px)" },
                 }}
@@ -156,7 +156,7 @@ function QuoteModal({ opened, close }) {
                             <Button
                                 type="submit"
                                 radius="xl"
-                                sx={{ backgroundColor: "#555555 !important", color: "#039BE5", cursor: "pointer" }}
+                                sx={{ backgroundColor: "#334367 !important", color: "#f3f3f3", cursor: "pointer" }}
                             >
                                 Get Quote
                             </Button>
