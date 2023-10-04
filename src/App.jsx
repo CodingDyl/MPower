@@ -8,6 +8,7 @@ import StarsCanvas from "./components/canvas/Stars.jsx"
 import Office from "./components/Office"
 import './index.css'
 import FAQ from "./components/FAQ.jsx";
+import Feedback from "./components/Feedback"
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
           <StarsCanvas />
         </div>
         <Office />
+        <div className="relative z-0 bg-black-100">
+          <Feedback />
+          <StarsCanvas />
+        </div>
         <Footer />
       </div>
     </BrowserRouter>
