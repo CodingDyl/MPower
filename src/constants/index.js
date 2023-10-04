@@ -117,4 +117,31 @@ const navLinks = [
     }
 ];
 
-  export {navLinks, services, footerLinks};
+const testimonials = [
+  {
+    testimonial:
+      "The only place I would recommend. Love the people and the service!",
+    name: "John Doe",
+    designation: "Client",
+    company: "mPowerRatings",
+    image: "https://randomuser.me/api/portraits/lego/2.jpg",
+  },
+  {
+    testimonial:
+      "Very professional. It’s the only place I trust in the industry.",
+    name: "Jane Doe",
+    designation: "Client",
+    company: "mPowerRatings",
+    image: "https://randomuser.me/api/portraits/lego/4.jpg",
+  },
+  {
+    testimonial:
+      "The best place on planet earth would highly recommend",
+    name: "Anne Human",
+    designation: "Client",
+    company: "mPowerRatings",
+    image: "https://randomuser.me/api/portraits/lego/3.jpg",
+  },
+];
+
+  export {navLinks, services, footerLinks, testimonials};
