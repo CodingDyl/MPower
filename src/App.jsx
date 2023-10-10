@@ -9,6 +9,7 @@ import Office from "./components/Office"
 import './index.css'
 import FAQ from "./components/FAQ.jsx";
 import Feedback from "./components/Feedback"
+import Accredidation from "./components/Accredidation"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Home />
         </div>
         <About />
+        <Accredidation />
         <FAQ />
         <div className="relative z-0 bg-black-100">
           <Contact />

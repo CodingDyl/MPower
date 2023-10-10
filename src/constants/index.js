@@ -8,8 +8,12 @@ const navLinks = [
       title: "BEE Directory",
     },
     {
-      id: "#declarations",
-      title: "Declarations",
+      id: "#accredidation",
+      title: "Accredidation",
+    },
+    {
+      id: "#complaints",
+      title: "Complaints"
     },
     {
       id: "#contact",
@@ -32,6 +36,52 @@ const navLinks = [
     },
     {
       title: 'B-BBEE Training',
+      //icon: batteries,
+    },
+  ];
+
+  const sector1 = [
+    {
+      title: "DTI",
+      //icon: brakes,
+    },
+    {
+      title: 'MAC Sector Code',
+      //icon: autoElectrical,
+    },
+    {
+      title: "ICT Sector Code",
+      //icon: inspection,
+    },
+    {
+      title: 'Agri Sector Code',
+      //icon: batteries,
+    },
+    {
+      title: 'Property Sector Code',
+      //icon: batteries,
+    },
+  ];
+
+  const sector2 = [
+    {
+      title: "Construction Sector Code",
+      //icon: brakes,
+    },
+    {
+      title: 'Tourism Sector Code',
+      //icon: autoElectrical,
+    },
+    {
+      title: "Integrated Sector Code",
+      //icon: inspection,
+    },
+    {
+      title: 'Forestry Sector Code',
+      //icon: batteries,
+    },
+    {
+      title: 'Financial Sector Code',
       //icon: batteries,
     },
   ];
@@ -124,4 +174,4 @@ const testimonials = [
   },
 ];
 
-  export {navLinks, services, footerLinks, testimonials};
+  export {navLinks, services, footerLinks, testimonials, sector1, sector2};
