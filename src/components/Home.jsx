@@ -20,7 +20,7 @@ const Home = () => {
     if (window.innerWidth <= 768) {
       setAnimationSize({ width: 250, height: 250 });
     } else {
-      setAnimationSize({ width: 350, height: 350 });
+      setAnimationSize({ width: 400, height: 400 });
     }
   }, []);
 
