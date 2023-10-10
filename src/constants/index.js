@@ -19,40 +19,20 @@ const navLinks = [
 
   const services = [
     {
-      title: "B-BBEE Verification",
+      title: "B-BBEE Verification & Certification",
       //icon: brakes,
     },
     {
-      title: 'Reporting',
+      title: 'B-BBEE Adivisory Services',
       //icon: autoElectrical,
     },
     {
-      title: 'Supplier Directory',
+      title: "Competent Person's Reports and Opinions",
       //icon: inspection,
     },
     {
-      title: 'Enterprise Development Directory',
+      title: 'B-BBEE Training',
       //icon: batteries,
-    },
-    {
-      title: 'Labour Reporting',
-      //icon: wipers,
-    },
-    {
-      title: 'Website Tutorials',
-      //icon: airConditioning,
-    },
-    {
-      title: 'Socio-Economic Development',
-      //icon: lights,
-    },
-    {
-      title: 'Skills Development',
-      //icon: lights,
-    },
-    {
-      title: 'B-BBEE Ownership',
-      //icon: lights,
     },
   ];
 
