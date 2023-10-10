@@ -16,6 +16,10 @@ const navLinks = [
       title: "Complaints"
     },
     {
+      id: "#verification",
+      title: "Verfication"
+    },
+    {
       id: "#contact",
       title: "Contact Us"
     }
