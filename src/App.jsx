@@ -24,12 +24,12 @@ function App() {
         <Accredidation />
         <FAQ />
         <div className="relative z-0 bg-black-100">
-          <Contact />
+          <Feedback />
           <StarsCanvas />
         </div>
         <Office />
         <div className="relative z-0 bg-black-100">
-          <Feedback />
+          <Contact />
           <StarsCanvas />
         </div>
         <Footer />
