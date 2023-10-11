@@ -20,6 +20,8 @@
     "@react-three/drei": "^9.83.9",
     "@react-three/fiber": "^8.14.1",
     "@tabler/icons-react": "^2.34.0",
+    "embla-carousel-autoplay": "^8.0.0-rc14",
+    "embla-carousel-react": "^8.0.0-rc14",
     "framer-motion": "^10.16.4",
     "leaflet": "^1.9.4",
     "lottie-react": "^2.4.0",

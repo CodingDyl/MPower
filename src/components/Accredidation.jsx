@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { SectionWrapper } from '../hoc'
 import {styles} from "../styles.js";
 import {motion} from "framer-motion";
@@ -6,6 +6,8 @@ import {fadeIn, textVariant} from "../utils/motion.js";
 import { SimpleGrid } from '@mantine/core';
 import { IconCheck } from "@tabler/icons-react";
 import { sector1, sector2 } from '../constants';
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 
 const Accredidation = () => {
     const Services1 = ({title}) => (
@@ -29,6 +31,7 @@ const Accredidation = () => {
         </div>
         
     );
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
   return (
     <>
         <motion.div variants={textVariant}>
@@ -50,6 +53,14 @@ const Accredidation = () => {
                 ))}
             </div>
         </SimpleGrid>
+
+        <div className="embla" ref={emblaRef}>
+            <div className="embla__container">
+                <div className="embla__slide">Slide 1</div>
+                <div className="embla__slide">Slide 2</div>
+                <div className="embla__slide">Slide 3</div>
+            </div>
+        </div>
     </>
   )
 }
