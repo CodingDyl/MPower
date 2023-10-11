@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import Lottie from 'react-lottie'
+import Lottie from 'lottie-react'
 import animationData from '../lotties/teamwork.json'
 import QuoteModal from "./modals/QuoteModal.jsx";
 
@@ -23,15 +23,6 @@ const Home = () => {
       setAnimationSize({ width: 400, height: 400 });
     }
   }, []);
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
   return (
     <section className="relative w-full h-screen mx-auto backdrop-blur-md">
       <div className={`${styles.paddingX} absolute inset-0 top-[200px] max-w-7xl md:flex sm:flex-col md:flex-row justify-center xs:items-center md:items-start mx-auto gap-5`}>
@@ -45,7 +36,7 @@ const Home = () => {
             <button onClick={handleQuote} className='hover:opacity-100btn bg-white-100 py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important'>Get a quote</button>
           </div>
         </div>
-        <Lottie options={defaultOptions} height={animationSize.height}
+        <Lottie animationData={animationData} height={animationSize.height}
                 width={animationSize.width}/>
         </div>
       <div className="absolute xs:bottom-10 md:bottom-20 w-full flex justify-center items-center">
