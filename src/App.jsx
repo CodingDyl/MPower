@@ -10,6 +10,7 @@ import './index.css'
 import FAQ from "./components/FAQ.jsx";
 import Feedback from "./components/Feedback"
 import Accredidation from "./components/Accredidation"
+import Verification from "./components/Verification"
 
 function App() {
 
@@ -22,6 +23,10 @@ function App() {
         </div>
         <About />
         <Accredidation />
+        <div className="relative z-0 bg-black-100">
+          <Verification />
+          <StarsCanvas />
+        </div>
         <FAQ />
         <div className="relative z-0 bg-black-100">
           <Feedback />
