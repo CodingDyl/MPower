@@ -1,7 +1,7 @@
 import React from 'react'
 import {SectionWrapper} from "../hoc/index.js";
 import {fadeIn, textVariant} from "../utils/motion.js";
-import {IconPhone, IconDialpad, IconMail, IconLocation} from "@tabler/icons-react";
+import {IconPhone, IconDialpad, IconMail, IconLocation, IconUser} from "@tabler/icons-react";
 import {styles} from "../styles.js";
 import {motion} from "framer-motion";
 import {Typography} from "@mui/material";
@@ -49,6 +49,18 @@ const Office = () => {
                         <IconLocation />
                     </div>
                     <Typography>The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196</Typography>
+                </div>
+                <div className="flex gap-1 align-center items-center">
+                    <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
+                        <IconUser />
+                    </div>
+                    <Typography>Roxanne Abramson | 082 563 1136</Typography>
+                </div>
+                <div className="flex gap-1 align-center items-center">
+                    <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
+                        <IconUser />
+                    </div>
+                    <Typography>roxanne@mpowerratings.co.za</Typography>
                 </div>
             </motion.div>
 
