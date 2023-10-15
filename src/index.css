@@ -33,22 +33,21 @@
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
-.embla {
-  overflow: hidden;
-}
-.embla__container {
+.card {
+  height: 27rem;
+  width: 14rem;
   display: flex;
-}
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 25%;
-  background: rgba(0, 0, 0, 0.6);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
 }
 
 .title {
   font-family: Greycliff CF, sans-serif;
-  font-weight: 900;
-  color: #f1f1f1;
+  font-weight: bold;
+  color: #334367;
   line-height: 1.2;
   font-size: 2rem;
   margin-top: 5rem;
