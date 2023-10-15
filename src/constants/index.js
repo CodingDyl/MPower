@@ -1,3 +1,5 @@
+import {accreCert, beeCert, comPro} from "../assets";
+
 const navLinks = [
     {
       id: "#about",
@@ -150,6 +152,29 @@ const navLinks = [
     }
 ];
 
+const documents = [
+    {
+        title: 'Accreditation Certificate SANAS',
+        download: "",
+        image: accreCert
+    },
+    {
+        title: "B-BBEE Certificate",
+        download: "",
+        image: beeCert,
+    },
+    {
+        title: "ABP membership certificate",
+        download: "",
+        image: ""
+    },
+    {
+        title: "Company Profile",
+        download: "",
+        image: comPro,
+    },
+];
+
 const testimonials = [
   {
     testimonial:
@@ -177,4 +202,4 @@ const testimonials = [
   },
 ];
 
-  export {navLinks, services, footerLinks, testimonials, sector1, sector2};
+  export {navLinks, services, footerLinks, testimonials, sector1, sector2, documents};

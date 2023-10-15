@@ -2,9 +2,8 @@ import React from 'react';
 import { SectionWrapper } from '../hoc';
 import {styles} from "../styles.js";
 import {motion} from "framer-motion";
-import {fadeIn, textVariant} from "../utils/motion.js";
+import {textVariant} from "../utils/motion.js";
 import { Timeline, Text } from '@mantine/core';
-import { root } from 'postcss';
 
 const Verification = () => {
   return (

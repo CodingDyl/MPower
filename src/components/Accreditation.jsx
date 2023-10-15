@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react'
+import React, {useEffect, useRef} from 'react'
 import { SectionWrapper } from '../hoc'
 import {styles} from "../styles.js";
 import {motion} from "framer-motion";
-import {fadeIn, textVariant} from "../utils/motion.js";
-import { SimpleGrid } from '@mantine/core';
-import { IconCheck } from "@tabler/icons-react";
+import {textVariant} from "../utils/motion.js";
+import {Button, Paper, SimpleGrid, Text, Title} from '@mantine/core';
+import {IconCheck, IconDownload} from "@tabler/icons-react";
 import { sector1, sector2 } from '../constants';
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
+import { documents } from '../constants';
 
 const Accreditation = () => {
     const Services1 = ({title}) => (
@@ -31,7 +32,24 @@ const Accreditation = () => {
         </div>
         
     );
+
+    const DisplayCard = ({image, title, download}) =>  (
+            <Paper shadow="md" p="xl" radius="md" style={{backgroundImage: `url(${image})`}} className="h-27 flex flex-col justify-between align-start bg-size-cover bg-position-center" >
+                <div>
+                    <Title order={3} className="title">
+                        {title}
+                    </Title>
+                </div>
+                <a download={download}>
+                    <Button variant="white" color="dark">
+                        <IconDownload />
+                    </Button>
+                </a>
+            </Paper>
+    );
+
     const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+    const divRef = useRef(null);
   return (
     <>
         <motion.div variants={textVariant}>
@@ -54,11 +72,13 @@ const Accreditation = () => {
             </div>
         </SimpleGrid>
 
-        <div className="embla" ref={emblaRef}>
+        <div className="embla mt-10" ref={emblaRef}>
             <div className="embla__container">
-                <div className="embla__slide">Slide 1</div>
-                <div className="embla__slide">Slide 2</div>
-                <div className="embla__slide">Slide 3</div>
+                {documents.map((document, index) => (
+                    <div className="embla__slide">
+                        <DisplayCard {...document} key={document.title} index={index} />
+                    </div>
+                    ))}
             </div>
         </div>
     </>
