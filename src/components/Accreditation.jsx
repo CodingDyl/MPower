@@ -1,14 +1,14 @@
-import React, {useEffect, useRef} from 'react'
+import React from 'react'
 import { SectionWrapper } from '../hoc'
 import {styles} from "../styles.js";
 import {motion} from "framer-motion";
 import {textVariant} from "../utils/motion.js";
-import {Button, Paper, SimpleGrid, Text, Title} from '@mantine/core';
+import {Button, Paper, rem, SimpleGrid, Title, useMantineTheme} from '@mantine/core';
 import {IconCheck, IconDownload} from "@tabler/icons-react";
 import { sector1, sector2 } from '../constants';
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
 import { documents } from '../constants';
+import {Carousel} from "@mantine/carousel";
+import {useMediaQuery} from "@mantine/hooks";
 
 const Accreditation = () => {
     const Services1 = ({title}) => (
@@ -34,22 +34,26 @@ const Accreditation = () => {
     );
 
     const DisplayCard = ({image, title, download}) =>  (
-            <Paper shadow="md" p="xl" radius="md" style={{backgroundImage: `url(${image})`}} className="h-27 flex flex-col justify-between align-start bg-size-cover bg-position-center" >
+            <Paper shadow="md" p="xl" radius="md" style={{backgroundImage: `url(${image})`}} className="card" >
                 <div>
                     <Title order={3} className="title">
                         {title}
                     </Title>
                 </div>
                 <a download={download}>
-                    <Button variant="white" color="dark">
-                        <IconDownload />
+                    <Button variant="white" color="dark" className="rounded bg-tertiary">
+                        <IconDownload color="#f1f1f1"/>
                     </Button>
                 </a>
             </Paper>
     );
-
-    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
-    const divRef = useRef(null);
+    const theme = useMantineTheme();
+    const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+    const slides = documents.map((document, index) => (
+        <Carousel.Slide key={document.title} index={index}>
+            <DisplayCard {...document} />
+        </Carousel.Slide>
+    ))
   return (
     <>
         <motion.div variants={textVariant}>
@@ -72,15 +76,15 @@ const Accreditation = () => {
             </div>
         </SimpleGrid>
 
-        <div className="embla mt-10" ref={emblaRef}>
-            <div className="embla__container">
-                {documents.map((document, index) => (
-                    <div className="embla__slide">
-                        <DisplayCard {...document} key={document.title} index={index} />
-                    </div>
-                    ))}
-            </div>
-        </div>
+        <Carousel
+            slideSize={{ base: '100%', sm: '50%' }}
+            slideGap={{ base: rem(2), sm: 'xl' }}
+            align="start"
+            slidesToScroll={mobile ? 1 : 2}
+            className="mt-10"
+        >
+            {slides}
+        </Carousel>
     </>
   )
 }
