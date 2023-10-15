@@ -2,14 +2,14 @@ import {useState, useEffect} from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import Lottie from 'lottie-react'
-import animationData from '../lotties/teamwork.json'
+import animationData from '../lotties/unity.json'
 import QuoteModal from "./modals/QuoteModal.jsx";
 
 const Home = () => {
 
   const [open, setOpen] = useState(false);
 
-  const [animationSize, setAnimationSize] = useState({ width: 500, height: 500 });
+  const [animationSize, setAnimationSize] = useState({ width: 600, height: 600 });
 
   const handleQuote = () => {
     setOpen(!open);
@@ -20,7 +20,7 @@ const Home = () => {
     if (window.innerWidth <= 768) {
       setAnimationSize({ width: 250, height: 250 });
     } else {
-      setAnimationSize({ width: 400, height: 400 });
+      setAnimationSize({ width: 500, height: 500 });
     }
   }, []);
   return (
