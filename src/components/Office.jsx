@@ -1,7 +1,7 @@
 import React from 'react'
 import {SectionWrapper} from "../hoc/index.js";
 import {fadeIn, textVariant} from "../utils/motion.js";
-import {IconPhone, IconPrinter, IconMail, IconLocation} from "@tabler/icons-react";
+import {IconPhone, IconDialpad, IconMail, IconLocation} from "@tabler/icons-react";
 import {styles} from "../styles.js";
 import {motion} from "framer-motion";
 import {Typography} from "@mui/material";
@@ -30,13 +30,13 @@ const Office = () => {
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconPhone />
                     </div>
-                    <Typography>011-880-0060 | 011-880-0064</Typography>
+                    <Typography>011-880-0060</Typography>
                 </div>
                 <div className="flex gap-1 align-center items-center">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
-                        <IconPrinter />
+                        <IconDialpad />
                     </div>
-                    <Typography>086 666 4815</Typography>
+                    <Typography>1. New Queries</Typography>
                 </div>
                 <div className="flex gap-1 align-center items-center">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">

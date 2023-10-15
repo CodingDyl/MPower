@@ -9,10 +9,10 @@ import { sector1, sector2 } from '../constants';
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 
-const Accredidation = () => {
+const Accreditation = () => {
     const Services1 = ({title}) => (
         <div className="flex gap-1 align-center items-center mb-2">
-            <div className="flex justify-center items-center border-solid border-2 align-center rounded-full px-2 py-2 bg-green-400">
+            <div className="flex justify-center items-center border-solid border-2 align-center rounded-full px-2 py-2 bg-tertiary">
                 <IconCheck />
             </div>
             <h3 className='text-tertiary text-[20px] font-bold text-center'>
@@ -22,7 +22,7 @@ const Accredidation = () => {
     );
     const Services2 = ({title}) => (
         <div className="flex gap-1 align-center items-center mb-2">
-            <div className="flex justify-center items-center border-solid border-2 align-center rounded-full px-2 py-2 bg-green-400">
+            <div className="flex justify-center items-center border-solid border-2 align-center rounded-full px-2 py-2 bg-tertiary">
                 <IconCheck />
             </div>
             <h3 className='text-tertiary text-[20px] font-bold text-center'>
@@ -35,7 +35,7 @@ const Accredidation = () => {
   return (
     <>
         <motion.div variants={textVariant}>
-                <p className={styles.sectionSubText}>Accredidation</p>
+                <p className={styles.sectionSubText}>Accreditation</p>
                 <h2 className={styles.sectionHeadText}>Providing B-BBEE Verification services
                                                         in the following sectors
                 </h2>
@@ -65,4 +65,4 @@ const Accredidation = () => {
   )
 }
 
-export default SectionWrapper(Accredidation, "accredidation")
+export default SectionWrapper(Accreditation, "accredidation")

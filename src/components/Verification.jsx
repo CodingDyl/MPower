@@ -18,7 +18,7 @@ const Verification = () => {
             <Timeline.Item title="Admin" className="text-white">
                 <Text c="dimmed" size="sm">Onboarding and signing of relevant documents</Text>
                 <Text c="dimmed" size="sm" mt={4}>50% deposit payment</Text>
-                <Text c="dimmed" size="sm" mt={4}>Verification Analyist and Technical Signatory appointment</Text>
+                <Text c="dimmed" size="sm" mt={4}>Verification Analyst and Technical Signatory appointment</Text>
             </Timeline.Item>
 
             <Timeline.Item title="Pre-Verification" className="text-white">
@@ -28,13 +28,13 @@ const Verification = () => {
             </Timeline.Item>
 
             <Timeline.Item title="Verification Commencement" className="text-white">
-                <Text c="dimmed" size="sm">Data schedulessentto client</Text>
+                <Text c="dimmed" size="sm">Data schedules sent to client</Text>
                 <Text c="dimmed" size="sm" mt={4}>Processing/Capturing data received from client</Text>
-                <Text c="dimmed" size="sm" mt={4}>Sample selectionand sending sampleto client</Text>
+                <Text c="dimmed" size="sm" mt={4}>Sample selection and sending sample to client</Text>
             </Timeline.Item>
 
             <Timeline.Item title="Onsite Verification Preparation" className="text-white">
-                <Text c="dimmed" size="sm">Receiving and procesing of sampled evidence</Text>
+                <Text c="dimmed" size="sm">Receiving and processing of sampled evidence</Text>
                 <Text c="dimmed" size="sm" mt={4}>Sending out Verification Plan</Text>
             </Timeline.Item>
         </Timeline>
@@ -64,7 +64,7 @@ const Verification = () => {
             </Timeline.Item>
 
             <Timeline.Item title="B-BBEE Certification" className="text-white">
-                <Text c="dimmed" size="sm">Once the final paymentismade the B-BBEE Certificateisissued</Text>
+                <Text c="dimmed" size="sm">Once the final payment is made the B-BBEE Certificate is issued</Text>
                 <Text c="dimmed" size="sm" mt={4}>The client satisfaction survey is sent to client to rate service received from mPowerRatings</Text>
                 <Text c="dimmed" size="sm" mt={4}>Once the satisfaction survey has been received the verification file is archived</Text>
             </Timeline.Item>

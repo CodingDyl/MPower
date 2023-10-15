@@ -9,7 +9,7 @@ import Office from "./components/Office"
 import './index.css'
 import FAQ from "./components/FAQ.jsx";
 import Feedback from "./components/Feedback"
-import Accredidation from "./components/Accredidation"
+import Accreditation from "./components/Accreditation"
 import Verification from "./components/Verification"
 import Complaints from "./components/Complaints.jsx";
 
@@ -23,7 +23,7 @@ function App() {
           <Home />
         </div>
         <About />
-        <Accredidation />
+        <Accreditation />
         <div className="relative z-0 bg-black-100">
           <Verification />
           <StarsCanvas />

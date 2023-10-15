@@ -9,7 +9,7 @@ const navLinks = [
     },
     {
       id: "#accredidation",
-      title: "Accredidation",
+      title: "Accreditation",
     },
     {
       id: "#complaints",
@@ -17,7 +17,7 @@ const navLinks = [
     },
     {
       id: "#verification",
-      title: "Verfication"
+      title: "Verification"
     },
     {
       id: "#contact",
@@ -31,7 +31,7 @@ const navLinks = [
       //icon: brakes,
     },
     {
-      title: 'B-BBEE Adivisory Services',
+      title: 'B-BBEE Advisory Services',
       //icon: autoElectrical,
     },
     {
@@ -94,11 +94,10 @@ const navLinks = [
     {
         title: "About",
         links: [
-            { label: "who we are", link: "#about" },
-            { label: "certificate", link: "" },
-            { label: "accreditation", link: "" },
-            { label: "contact", link: "#contact" },
-            { label: "faq", link: '#faq'}
+            { label: "Who we are", link: "#about" },
+            { label: "Certificate", link: "" },
+            { label: "Contact", link: "#contact" },
+            { label: "FAQ", link: '#faq'}
         ]
     },
     {
@@ -130,22 +129,22 @@ const navLinks = [
     ]
     },
     {
-        title: "Join Us",
+        title: "Information",
         links: [ {
-            label: "Discord",
-            link: "https://www.facebook.com"
+            label: "Verification Approach",
+            link: "#verification"
         },
         {
-            label: "Facebook",
-            link: "https://www.facebook.com"
+            label: "Complaints",
+            link: "#complaints"
         },
         {
-            label: "Instagram",
-            link: "https://www.instagram.com"
+            label: "Accreditation",
+            link: "#accreditation"
         },
         {
-            label: "Twitter",
-            link: "https://twitter.com"
+            label: "BEE Directory",
+            link: "https://cloud.procureactiv.co.za/procurement/suppliers/advanced-search"
         }
     ]
     }

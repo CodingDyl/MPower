@@ -90,10 +90,7 @@ const FAQ = () => {
                                 <Accordion.Item value="Where can we find you ?">
                                     <Accordion.Control className="text-primary font-extrabold">Where can we find you?</Accordion.Control>
                                     <Accordion.Panel>
-                                        <p className="text-primary">99 Jan Smuts Avenue,
-                                            Saxonwold,
-                                            2196,
-                                            Johannesburg</p>
+                                        <p className="text-primary">The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
                             </Accordion>
