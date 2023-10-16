@@ -64,7 +64,7 @@ const Accreditation = () => {
                 </h2>
         </motion.div>
 
-        <SimpleGrid cols={{base: 1, sm: 2}} verticalSpacing="xl" className="pt-10">
+        <SimpleGrid cols={2} verticalSpacing="xl" className="pt-10">
             <div className="flex flex-col justify-center align-left">
             {sector1.map((sector1, index) => (
               <Services1 key={sector1.title} index={index} {...sector1} />
