@@ -9,6 +9,7 @@ import { sector1, sector2 } from '../constants';
 import { documents } from '../constants';
 import {Carousel} from "@mantine/carousel";
 import {useMediaQuery} from "@mantine/hooks";
+import {Tilt} from "react-tilt";
 
 const Accreditation = () => {
     const Services1 = ({title}) => (
@@ -49,8 +50,8 @@ const Accreditation = () => {
     );
     const theme = useMantineTheme();
     const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-    const slides = documents.map((document, index) => (
-        <Carousel.Slide key={document.title} index={index}>
+    const slides = documents.map((document) => (
+        <Carousel.Slide key={document.title}>
             <DisplayCard {...document} />
         </Carousel.Slide>
     ))
