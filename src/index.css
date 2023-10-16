@@ -35,13 +35,14 @@
 
 .card {
   height: 27rem;
-  width: 14rem;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   background-size: cover;
   background-position: center;
+  margin-right: 2rem;
 }
 
 .title {
