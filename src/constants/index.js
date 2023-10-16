@@ -155,12 +155,12 @@ const navLinks = [
 const documents = [
     {
         title: 'Accreditation Certificate SANAS',
-        download: "",
+        download: "../assets/BVA204_SANAS_Certificate_of_Accreditation.pdf",
         image: accreCert
     },
     {
         title: "B-BBEE Certificate",
-        download: "",
+        download: "../assets/mPowerRatings_B-BBEE_Certificate.pdf",
         image: beeCert,
     },
     {
@@ -170,7 +170,7 @@ const documents = [
     },
     {
         title: "Company Profile",
-        download: "",
+        download: "../assets/mPowerRatings_Company_Profile.pdf",
         image: comPro,
     },
 ];

@@ -41,7 +41,7 @@ const Accreditation = () => {
                         {title}
                     </Title>
                 </div>
-                <a download={download}>
+                <a href={download} download>
                     <Button variant="white" color="dark" className="rounded bg-tertiary">
                         <IconDownload color="#f1f1f1"/>
                     </Button>
@@ -64,7 +64,7 @@ const Accreditation = () => {
                 </h2>
         </motion.div>
 
-        <SimpleGrid cols={2} verticalSpacing="xl" className="pt-10">
+        <SimpleGrid cols={{base: 1, sm: 2}} verticalSpacing="xl" className="pt-10">
             <div className="flex flex-col justify-center align-left">
             {sector1.map((sector1, index) => (
               <Services1 key={sector1.title} index={index} {...sector1} />
