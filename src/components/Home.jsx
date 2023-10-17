@@ -29,7 +29,7 @@ const Home = () => {
     <section className="relative w-full h-screen mx-auto backdrop-blur-md">
       <div className={`${styles.paddingX} absolute inset-0 top-[200px] max-w-7xl md:flex sm:flex-col sm:align-middle md:flex-row justify-center xs:items-center md:items-start mx-auto gap-5`}>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white lg:text-8xl`}>Welcome to <br></br><span className="text-tertiary">mPowerRatings</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white lg:text-8xl`}>Welcome to <br></br><span className="text-tertiary">mPower</span>Ratings</h1>
           <p className={`${styles.heroSubText} mt-4 text-secondary`}>
             Ensuring change through Empowerment.
           </p>
