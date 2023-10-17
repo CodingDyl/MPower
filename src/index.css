@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Kanit", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -63,5 +64,11 @@
   .lottie-container {
     width: 250px; /* Adjusted width for small screens */
     height: 250px; /* Adjusted height for small screens */
+  }
+}
+
+@layer base {
+  * {
+    @apply font-[Kanit]
   }
 }
