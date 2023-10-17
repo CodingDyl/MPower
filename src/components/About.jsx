@@ -40,7 +40,7 @@ const About = () => {
         <>
           <motion.div variants={textVariant}>
             <p className={styles.sectionSubText}>Introduction</p>
-            <h2 className={styles.sectionHeadText}>About <span className="text-tertiary">mPowerRatings</span></h2>
+            <h2 className={styles.sectionHeadText}>About <span className="text-tertiary">mPower</span>Ratings</h2>
           </motion.div>
           <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-primary text-[17px] max-w-3xl leading-[30px]">
           mPowerRatings is a SANASAccredited B-BBEE
@@ -52,7 +52,7 @@ therefore perfectly positioned to guide our clientsthrough the
 transformation landscape.
 mPowerRatings is a 15% Black Female Owned Level 3 B-BBEE
 Contributor using the QSE Scorecard.
-To find out more about our range of services compete a contact form or contact us at (011)880-0060; or at <a href="info@mpowerratings.co.za." className="underline text-blue-60 !important"><span className="text-blue">info@mpowerratings.co.za.</span></a>
+To find out more about our range of services compete a contact form or contact us at (011) 880-0060; or at <a href="info@mpowerratings.co.za." className="underline text-blue-60 !important"><span className="text-blue">info@mpowerratings.co.za.</span></a>
           </motion.p>
     
           <div className='mt-20 flex flex-wrap gap-10'>
