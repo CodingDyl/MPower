@@ -49,8 +49,19 @@
 .title {
   font-family: Greycliff CF, sans-serif;
   font-weight: bold;
-  color: #334367;
   line-height: 1.2;
   font-size: 2rem;
   margin-top: 5rem;
+}
+
+.lottie-container {
+  width: 700px; /* Default width */
+  height: 700px; /* Default height */
+}
+
+@media (max-width: 768px) {
+  .lottie-container {
+    width: 250px; /* Adjusted width for small screens */
+    height: 250px; /* Adjusted height for small screens */
+  }
 }

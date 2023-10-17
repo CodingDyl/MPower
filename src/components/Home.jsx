@@ -19,15 +19,17 @@ const Home = () => {
     // Adjust the size based on screen width
     if (window.innerWidth <= 768) {
       setAnimationSize({ width: 250, height: 250 });
+      console.log("small screen");
     } else {
-      setAnimationSize({ width: 500, height: 500 });
+      setAnimationSize({ width: 700, height: 700 });
+      console.log("medium screen");
     }
   }, []);
   return (
     <section className="relative w-full h-screen mx-auto backdrop-blur-md">
-      <div className={`${styles.paddingX} absolute inset-0 top-[200px] max-w-7xl md:flex sm:flex-col md:flex-row justify-center xs:items-center md:items-start mx-auto gap-5`}>
+      <div className={`${styles.paddingX} absolute inset-0 top-[200px] max-w-7xl md:flex sm:flex-col sm:align-middle md:flex-row justify-center xs:items-center md:items-start mx-auto gap-5`}>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Welcome to <br></br><span className="text-tertiary">mPowerRatings</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white lg:text-8xl`}>Welcome to <br></br><span className="text-tertiary">mPowerRatings</span></h1>
           <p className={`${styles.heroSubText} mt-4 text-secondary`}>
             Ensuring change through Empowerment.
           </p>
@@ -36,8 +38,8 @@ const Home = () => {
             <button onClick={handleQuote} className='hover:opacity-100btn bg-white-100 py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important'>Get a quote</button>
           </div>
         </div>
-        <Lottie animationData={animationData} height={animationSize.height}
-                width={animationSize.width}/>
+        <div className="lottie-container my-auto"><Lottie animationData={animationData} /></div>
+
         </div>
       <div className="absolute xs:bottom-10 md:bottom-20 w-full flex justify-center items-center">
         <a href={`#about`}>

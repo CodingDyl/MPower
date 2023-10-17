@@ -156,22 +156,26 @@ const documents = [
     {
         title: 'Accreditation Certificate SANAS',
         download: "../assets/BVA204_SANAS_Certificate_of_Accreditation.pdf",
-        image: accreCert
+        image: accreCert,
+        text: 'text-tertiary'
     },
     {
         title: "B-BBEE Certificate",
         download: "../assets/mPowerRatings_B-BBEE_Certificate.pdf",
         image: beeCert,
+        text: 'text-tertiary'
     },
     {
         title: "ABP membership certificate",
         download: "",
-        image: ""
+        image: "",
+        text: 'text-tertiary'
     },
     {
         title: "Company Profile",
         download: "../assets/mPowerRatings_Company_Profile.pdf",
         image: comPro,
+        text: 'text-white'
     },
 ];
 
