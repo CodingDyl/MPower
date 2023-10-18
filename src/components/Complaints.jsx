@@ -4,7 +4,7 @@ import animationData from "../lotties/unity.json";
 
 const Complaints = () => {
     return(
-        <div className="wrapper">
+        <div className="wrapper" id="complaints">
                 <div className="body">
                     <Title className="title">Complaints</Title>
                     <Text fw={500} fz="lg" mb={5}>
