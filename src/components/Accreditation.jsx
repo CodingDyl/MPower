@@ -37,7 +37,7 @@ const Accreditation = () => {
     const DisplayCard = ({image, title, download, text}) =>  (
             <Paper shadow="md" p="xl" radius="md" style={{backgroundImage: `url(${image})`}} className="card bg-blend-normal" >
                 <div>
-                    <Title order={3} className={`title ${text}`}>
+                    <Title order={3} className={`title-card ${text}`}>
                         {title}
                     </Title>
                 </div>

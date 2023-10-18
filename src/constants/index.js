@@ -154,6 +154,12 @@ const navLinks = [
 
 const documents = [
     {
+        title: "Company Profile",
+        download: "../assets/mPowerRatings_Company_Profile.pdf",
+        image: comPro,
+        text: 'text-white'
+    },
+    {
         title: 'Accreditation Certificate SANAS',
         download: "../assets/BVA204_SANAS_Certificate_of_Accreditation.pdf",
         image: accreCert,
@@ -170,12 +176,6 @@ const documents = [
         download: "",
         image: "",
         text: 'text-tertiary'
-    },
-    {
-        title: "Company Profile",
-        download: "../assets/mPowerRatings_Company_Profile.pdf",
-        image: comPro,
-        text: 'text-white'
     },
 ];
 
