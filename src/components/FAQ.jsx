@@ -99,7 +99,9 @@ const FAQ = () => {
                     </Grid.Col>
                 </Grid>
             </motion.div>
-            <Complaints />
+            <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
+                <Complaints />
+            </motion.div>
         </>
     )
 }

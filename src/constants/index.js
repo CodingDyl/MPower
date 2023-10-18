@@ -14,8 +14,8 @@ const navLinks = [
       title: "Accreditation",
     },
     {
-      id: "#complaints",
-      title: "Complaints"
+      id: "#faq",
+      title: "Get Assistance"
     },
     {
       id: "#verification",
