@@ -10,7 +10,7 @@ const Complaints = () => {
                     <Text fw={500} fz="lg" mb={5}>
                         We are here to hear you
                     </Text>
-                    <Text fz="sm" c="dimmed">
+                    <Text fz="sm">
                         mPowerRatings (Pty) Ltd is committed to ensuring that all complaints and appeals are handled fairly, methodically and timeously to give confidence that the B-BBEE Verification Process is accurate and impartial.An Appeal:
                         Complaint:
                         To be put in writing and sent to info@mpowerratings.co.za
