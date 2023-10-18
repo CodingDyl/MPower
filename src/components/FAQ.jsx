@@ -3,6 +3,7 @@ import {fadeIn, textVariant} from "../utils/motion.js";
 import {styles} from "../styles.js";
 import { Grid, Accordion } from '@mantine/core';
 import { SectionWrapper } from '../hoc';
+import Complaints from "./Complaints.jsx";
 
 
 const FAQ = () => {
@@ -17,7 +18,7 @@ const FAQ = () => {
                 At our mPower Ratings, we understand that navigating the intricacies of B-BBEE can be both challenging and crucial for businesses in South Africa. In this FAQ section, we aim to provide you with clear and concise answers to common questions about B-BBEE. Whether you're new to the concept or looking for specific insights, our goal is to help you better understand why B-BBEE is important and how it can positively impact your organization.
             </motion.p>
 
-            <motion.div className="mt-10">
+            <motion.div className="mt-10 mb-[4rem]">
                 <Grid>
                     <Grid.Col span={12} md={6}>
                         <motion.div variants={fadeIn("right", "", 0.1, 1)}>
@@ -98,6 +99,7 @@ const FAQ = () => {
                     </Grid.Col>
                 </Grid>
             </motion.div>
+            <Complaints />
         </>
     )
 }

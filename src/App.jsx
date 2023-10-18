@@ -28,7 +28,6 @@ function App() {
           <Verification />
           <StarsCanvas />
         </div>
-        <Complaints />
         <FAQ />
         <div className="relative z-0 bg-black-100">
           <Feedback />

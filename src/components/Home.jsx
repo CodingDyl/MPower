@@ -21,7 +21,7 @@ const Home = () => {
       setAnimationSize({ width: 250, height: 250 });
       console.log("small screen");
     } else {
-      setAnimationSize({ width: 700, height: 700 });
+      setAnimationSize({ width: 650, height: 650 });
       console.log("medium screen");
     }
   }, []);
