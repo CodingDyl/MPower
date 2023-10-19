@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {iss, pwc, rhb, spar, mpact, deloitte} from "../../assets"
 
+
 export default class Customers extends Component {
     render() {
         const settings = {
@@ -12,9 +13,10 @@ export default class Customers extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             autoplay: true,
-            speed: 1500,
+            speed: 1000,
             autoplaySpeed: 2000,
             cssEase: "linear",
+            arrows: true,
             responsive: [
                 {
                     breakpoint: 1024,
