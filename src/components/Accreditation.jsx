@@ -64,7 +64,11 @@ const Accreditation = () => {
                 </h2>
         </motion.div>
 
-        <SimpleGrid cols={2} verticalSpacing="xl" className="pt-10">
+        <SimpleGrid cols={2} verticalSpacing="xl" className="pt-10" breakpoints={[
+            { maxWidth: '62rem', cols: 1, spacing: 'md' },
+            { maxWidth: '48rem', cols: 1, spacing: 'sm' },
+            { maxWidth: '36rem', cols: 1, spacing: 'sm' },
+        ]}>
             <div className="flex flex-col justify-center align-left">
             {sector1.map((sector1, index) => (
               <Services1 key={sector1.title} index={index} {...sector1} />

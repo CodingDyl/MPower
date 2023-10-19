@@ -132,3 +132,20 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+.mainContainer {
+  margin: 10px;
+}
+
+.mainContainer .container {
+  background-color: transparent;
+  padding: 1rem 0;
+}
+.mainContainer .container img{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}

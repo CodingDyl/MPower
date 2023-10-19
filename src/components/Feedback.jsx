@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import Customers from "./slider/Customers.jsx";
 
 const FeedbackCard = ({
   index,
@@ -44,6 +45,7 @@ const FeedbackCard = ({
 
 const Feedback = () => {
   return (
+      <>
     <div className={`mt-12 bg-primary rounded-[20px]`}>
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
@@ -59,6 +61,13 @@ const Feedback = () => {
         ))}
       </div>
     </div>
+        <div className="mt-10">
+          <div className="mb-2">
+            <h2 className={`${styles.sectionHeadText} text-white`}>Our Customers.</h2>
+          </div>
+          <Customers />
+        </div>
+  </>
   );
 };
 
