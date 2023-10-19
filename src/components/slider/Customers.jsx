@@ -10,9 +10,9 @@ export default class Customers extends Component {
             dots: false,
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
             autoplay: true,
-            speed: 1000,
+            speed: 1500,
             autoplaySpeed: 2000,
             cssEase: "linear",
             responsive: [
