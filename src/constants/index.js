@@ -6,20 +6,16 @@ const navLinks = [
       title: "About",
     },
     {
-      id: "https://cloud.procureactiv.co.za/procurement/suppliers/advanced-search",
-      title: "BEE Directory",
-    },
-    {
       id: "#accredidation",
       title: "Accreditation",
     },
     {
-      id: "#faq",
-      title: "Get Assistance"
+        id: "#verification",
+        title: "Verification"
     },
     {
-      id: "#verification",
-      title: "Verification"
+      id: "#faq",
+      title: "Get Assistance"
     },
     {
       id: "#contact",

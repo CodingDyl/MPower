@@ -37,9 +37,9 @@ const Contact = () => {
                 'template_89r4q4d',
                 {
                     from_name: form.name,
-                    to_name: "Dylan",
+                    to_name: "mPowerRatings",
                     from_email: form.email,
-                    to_email: "2610dylan@gmail.com",
+                    to_email: "info@mpowerratings.co.za",
                     message: form.message,
                 },
                 'i_IFgvR2F8kYMIPmq'
@@ -47,7 +47,7 @@ const Contact = () => {
             .then(
                 () => {
                     setLoading(false);
-                    alert("Thank you. I will get back to you as soon as possible.");
+                    alert("Thank you. We will get back to you as soon as possible.");
 
                     setForm({
                         name: "",
@@ -94,6 +94,7 @@ const Contact = () => {
                     <label className='flex flex-col'>
                         <span className='text-tertiary font-medium mb-4'>Your email</span>
                         <input
+                            required
                             type='email'
                             name='email'
                             value={form.email}
@@ -105,6 +106,7 @@ const Contact = () => {
                     <label className='flex flex-col'>
                         <span className='text-tertiary font-medium mb-4'>Your Message</span>
                         <textarea
+                            required
                             rows={7}
                             name='message'
                             value={form.message}

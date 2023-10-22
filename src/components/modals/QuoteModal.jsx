@@ -10,6 +10,8 @@ import {
     Select,
     Modal,
 } from "@mantine/core";
+import {useRef, useState} from "react";
+import emailjs from "@emailjs/browser";
 
 function QuoteModal({ opened, close }) {
     const quoteTypeOptions = [
@@ -20,6 +22,8 @@ function QuoteModal({ opened, close }) {
         'Software Packages',
         'Subscription Packages'
     ]
+
+    const formRef = useRef();
     const form = useForm({
         initialValues: {
             name: "",
@@ -38,6 +42,42 @@ function QuoteModal({ opened, close }) {
                     : null,
         },
     });
+
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        emailjs
+            .send(
+                'service_8ug5t08',
+                'template_89r4q4d',
+                {
+                    from_name: form.name,
+                    to_name: "mPowerRatings",
+                    from_email: form.email,
+                    to_email: "info@mpowerratings.co.za",
+                    message: form.message,
+                },
+                'i_IFgvR2F8kYMIPmq'
+            )
+            .then(
+                () => {
+                    setLoading(false);
+                    alert("Thank you. We will get back to you as soon as possible.");
+
+                    form.reset();
+                },
+                (error) => {
+                    setLoading(false);
+                    console.error(error);
+
+                    alert("Ahh, something went wrong. Please try again.");
+                }
+            );
+    };
+
 
     return (
         <>
@@ -61,9 +101,8 @@ function QuoteModal({ opened, close }) {
                     </Text>
 
                     <form
-                        onSubmit={(event) => {
-                            event.preventDefault(); // prevent default form submission behavior
-                        }}
+                        ref={formRef}
+                        onSubmit={handleSubmit}
                     >
                         <Stack>
 
@@ -158,7 +197,7 @@ function QuoteModal({ opened, close }) {
                                 radius="xl"
                                 sx={{ backgroundColor: "#334367 !important", color: "#f3f3f3", cursor: "pointer" }}
                             >
-                                Get Quote
+                                {loading ? "Requesting Quote..." : "Get Quote"}
                             </Button>
                         </Group>
                     </form>
