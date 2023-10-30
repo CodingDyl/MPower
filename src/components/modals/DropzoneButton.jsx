@@ -1,5 +1,5 @@
 import { Text, Group, rem } from '@mantine/core';
-import { IconX, IconUpload, IconPhoto} from '@tabler/icons-react';
+import { IconX, IconUpload, IconFileImport} from '@tabler/icons-react';
 import { Dropzone, MIME_TYPES } from '@mantine/dropzone';
 
 const DropzoneButton = () => {
@@ -29,7 +29,7 @@ const DropzoneButton = () => {
                     />
                 </Dropzone.Reject>
                 <Dropzone.Idle>
-                    <IconPhoto size="3.2rem" stroke={1.5} />
+                    <IconFileImport size="3.2rem" stroke={1.5} />
                 </Dropzone.Idle>
 
                 <div>
