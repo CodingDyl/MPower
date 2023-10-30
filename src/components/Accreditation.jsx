@@ -9,7 +9,7 @@ import { sector1, sector2 } from '../constants';
 import { documents } from '../constants';
 import {Carousel} from "@mantine/carousel";
 import {useMediaQuery} from "@mantine/hooks";
-import {Tilt} from "react-tilt";
+import { IconArrowRight, IconArrowLeft } from '@tabler/icons-react';
 
 const Accreditation = () => {
     const Services1 = ({title}) => (
@@ -87,6 +87,16 @@ const Accreditation = () => {
             align="start"
             slidesToScroll={mobile ? 1 : 2}
             className="mt-10"
+            nextControlIcon={<IconArrowRight size={16} />}
+            previousControlIcon={<IconArrowLeft size={16} />}
+            styles={{
+                control: {
+                    backgroundColor: "#334367",
+                    color: '#334367',
+                    font: 'bold',
+                    border: '4px solid #334367'
+                }
+            }}
         >
             {slides}
         </Carousel>

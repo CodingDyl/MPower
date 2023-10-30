@@ -1,4 +1,4 @@
-import {accreCert, beeCert, comPro} from "../assets";
+import {accreCert, beeCert, comPro, comForm} from "../assets";
 
 const navLinks = [
     {
@@ -156,22 +156,28 @@ const documents = [
         text: 'text-white'
     },
     {
+        title: 'F 213 Company Information Form Rev 7',
+        download: "../assets/Company_Information_Form.xls",
+        image: comForm,
+        text: 'text-white'
+    },
+    {
         title: 'Accreditation Certificate SANAS',
         download: "../assets/BVA204_SANAS_Certificate_of_Accreditation.pdf",
         image: accreCert,
-        text: 'text-tertiary'
+        text: 'text-white'
     },
     {
         title: "B-BBEE Certificate",
         download: "../assets/mPowerRatings_B-BBEE_Certificate.pdf",
         image: beeCert,
-        text: 'text-tertiary'
+        text: 'text-white'
     },
     {
         title: "ABP membership certificate",
         download: "",
         image: "",
-        text: 'text-tertiary'
+        text: 'text-white'
     },
 ];
 
