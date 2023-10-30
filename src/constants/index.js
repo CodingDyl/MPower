@@ -156,7 +156,7 @@ const documents = [
         text: 'text-white'
     },
     {
-        title: 'F 213 Company Information Form Rev 7',
+        title: 'Company Information Form',
         download: "../assets/Company_Information_Form.xls",
         image: comForm,
         text: 'text-white'
