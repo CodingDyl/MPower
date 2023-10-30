@@ -54,11 +54,10 @@
 .title-card {
   font-family: Greycliff CF, sans-serif;
   font-weight: bold;
-  line-height: 1.2;
   font-size: 2rem;
-  margin-top: 5rem;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
   border-radius: 0.5rem;
 }
 
