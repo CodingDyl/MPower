@@ -7,11 +7,11 @@ import {
     Group,
     Button,
     Stack,
-    Select,
     Modal,
 } from "@mantine/core";
 import {useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
+import DropzoneButton from "./DropzoneButton.jsx";
 
 function QuoteModal({ opened, close }) {
     const quoteTypeOptions = [
@@ -133,28 +133,6 @@ function QuoteModal({ opened, close }) {
                                         />
                                     </div>
 
-                                    <TextInput
-                                        required
-                                        label="Contact Number"
-                                        placeholder="Your contact number"
-                                        value={form.values.contactNumber}
-                                        onChange={(event) =>
-                                            form.setFieldValue("contactNumber", event.currentTarget.value)
-                                        }
-                                        radius="md"
-                                    />
-
-                                    <TextInput
-                                        required
-                                        label="Company"
-                                        placeholder="Your company name"
-                                        value={form.values.company}
-                                        onChange={(event) =>
-                                            form.setFieldValue("company", event.currentTarget.value)
-                                        }
-                                        radius="md"
-                                    />
-
                                     <select
                                         required
                                         label="Quote type"
@@ -174,18 +152,7 @@ function QuoteModal({ opened, close }) {
                                         ))}
                                     </select>
 
-                                    <Textarea
-                                        rows={7}
-                                        name='message'
-                                        value={form.values.message}
-                                        placeholder='Your question or comment here...'
-                                        className='bg-transparent placeholder:text-primary text-white rounded-lg outline-none border-none font-medium'
-                                        onChange={(event) => {
-                                            form.setFieldValue("message", event.currentTarget.value);
-                                        }}
-                                        radius="md"
-                                    />
-
+                                    <DropzoneButton />
 
                                 </>
 
@@ -199,6 +166,13 @@ function QuoteModal({ opened, close }) {
                             >
                                 {loading ? "Requesting Quote..." : "Get Quote"}
                             </Button>
+                            <a href="#accredidation" onClick={close}>
+                            <Button
+                                radius="xl"
+                                sx={{ backgroundColor: "#334367 !important", color: "#f3f3f3", cursor: "pointer" }}>
+                                Get Company Info Form
+                            </Button></a>
+
                         </Group>
                     </form>
                 </Paper>

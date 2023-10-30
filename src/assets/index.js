@@ -11,5 +11,6 @@ import iss from "./iss.png";
 import rhb from "./rbh.png";
 import pwc from "./pwc.jpg";
 import mpact from "./mpact.jpg"
+import comForm from "./comForm.png";
 
-export {logo, menu, close, accreCert, beeCert, comPro, iss, pwc, rhb, spar, mpact, deloitte};
+export {logo, menu, close, accreCert, beeCert, comPro, iss, pwc, rhb, spar, mpact, deloitte, comForm};
