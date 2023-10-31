@@ -12,5 +12,6 @@ import rhb from "./rbh.png";
 import pwc from "./pwc.jpg";
 import mpact from "./mpact.jpg"
 import comForm from "./comForm.png";
+import membership from "./membership.jpg";
 
-export {logo, menu, close, accreCert, beeCert, comPro, iss, pwc, rhb, spar, mpact, deloitte, comForm};
+export {logo, menu, close, accreCert, beeCert, comPro, iss, pwc, rhb, spar, mpact, deloitte, comForm, membership};

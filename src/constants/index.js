@@ -1,4 +1,4 @@
-import {accreCert, beeCert, comPro, comForm} from "../assets";
+import {accreCert, beeCert, comPro, comForm, membership} from "../assets";
 
 const navLinks = [
     {
@@ -174,9 +174,9 @@ const documents = [
         text: 'text-white'
     },
     {
-        title: "ABP membership certificate",
+        title: "ABP Membership Certificate",
         download: "",
-        image: "",
+        image: membership,
         text: 'text-white'
     },
 ];
