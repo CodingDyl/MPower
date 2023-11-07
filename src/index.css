@@ -72,7 +72,7 @@
     height: 250px; /* Adjusted height for small screens */
   }
   .wrapper {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 2rem;
     justify-content: center;
     text-align: center;
