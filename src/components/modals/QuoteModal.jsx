@@ -33,7 +33,7 @@ function QuoteModal({ opened, close }) {
             name: "",
             emailAddress: "",
             quoteType: "",
-            attatchment: "",
+            attachment: "",
         },
 
         validate: {

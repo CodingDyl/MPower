@@ -1,8 +1,14 @@
 import {Button, TextInput, Title, Text} from "@mantine/core";
 import Lottie from "lottie-react";
 import animationData from "../lotties/unity.json";
+import ComplaintModal from "./modals/ComplaintModal.jsx";
+import {useState} from "react";
 
 const Complaints = () => {
+    const [open, setOpen] = useState(false);
+    const handleComplaint = () => {
+        setOpen(!open);
+    }
     return(
         <div className="wrapper" id="complaints">
                 <div className="body">
@@ -17,10 +23,11 @@ const Complaints = () => {
                     </Text>
 
                     <div className="controls">
-                        <a href={`#contact`}><Button className="hover:opacity-100 hover:bg-transparent hover:b-2 hover:border-white hover:text-white-100 btn bg-white py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important">Get In Touch</Button></a>
+                        <Button className="hover:opacity-100 hover:bg-transparent hover:b-2 hover:border-white hover:text-white-100 btn bg-white py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important" onClick={handleComplaint}>Lodge a Complaint/Appeal</Button>
                     </div>
                 </div>
                 <Lottie animationData={animationData} className="image" />
+            <ComplaintModal opened={open} close={() => setOpen(false)} />
         </div>
     )
 }
