@@ -40,7 +40,7 @@ const Navbar = () => {
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
                 <li key={link.id} className={`${active === link.title ? "text-tertiary" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => { setToggle(!toggle); setActive(link.title); }}>
-                  <a href={`#${link.id}`}>
+                  <a href={`${link.id}`}>
                     {link.title}
                   </a>
                 </li>
