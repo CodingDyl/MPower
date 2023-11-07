@@ -170,7 +170,7 @@ function ComplaintModal({ opened, close }) {
                             >
                                 {loading ? "Reporting Incident..." : "Report Incident"}
                             </Button>
-                            <a href="#accredidation" onClick={close}>
+                            <a href="#forms" onClick={close}>
                                 <Button
                                     radius="xl"
                                     sx={{ backgroundColor: "#334367 !important", color: "#f3f3f3", cursor: "pointer" }}>

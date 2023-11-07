@@ -82,6 +82,7 @@ const Accreditation = () => {
         </SimpleGrid>
 
         <Carousel
+            id="forms"
             slideSize={{ base: '100%', sm: '50%' }}
             slideGap={{ base: rem(2), sm: 'xl' }}
             align="start"
