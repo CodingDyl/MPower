@@ -93,7 +93,7 @@ const navLinks = [
         title: "About",
         links: [
             { label: "Who we are", link: "#about" },
-            { label: "Certificate", link: "" },
+            { label: "Certificate", link: "#forms" },
             { label: "Contact", link: "#contact" },
             { label: "FAQ", link: '#faq'}
         ]
@@ -102,7 +102,7 @@ const navLinks = [
         title: "Declarations",
         links: [ {
             label: "Complaints, appeals and disputes",
-            link: "#faq"
+            link: "#complaints"
         },
         {
             label: "Impartiality Statement",
@@ -114,7 +114,7 @@ const navLinks = [
         },
         {
             label: "B-BBEE Certificate",
-            link: "#accredidation"
+            link: "#forms"
         },
         {
           label: "Accreditation",
