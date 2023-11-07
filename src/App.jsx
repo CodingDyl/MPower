@@ -11,7 +11,6 @@ import FAQ from "./components/FAQ.jsx";
 import Feedback from "./components/Feedback"
 import Accreditation from "./components/Accreditation"
 import Verification from "./components/Verification"
-import Complaints from "./components/Complaints.jsx";
 
 function App() {
 

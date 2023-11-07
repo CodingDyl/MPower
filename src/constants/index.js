@@ -102,27 +102,27 @@ const navLinks = [
         title: "Declarations",
         links: [ {
             label: "Complaints, appeals and disputes",
-            link: "https://google.co.za/"
+            link: "#faq"
         },
         {
             label: "Impartiality Statement",
-            link: ""
+            link: "#impartiality"
         },
         {
             label: "B-BBEE Consulting",
-            link: ""
+            link: "#faq"
         },
         {
             label: "B-BBEE Certificate",
-            link: ""
+            link: "#accredidation"
         },
         {
           label: "Accreditation",
-          link: ""
+          link: "#accredidation"
         },
         {
           label: "Youth Employment Service",
-          link: ""
+          link: "#faq"
         },
     ]
     },
@@ -159,6 +159,12 @@ const documents = [
         title: 'Company Information Form',
         download: "../assets/Company_Information_Form.xls",
         image: comForm,
+        text: 'text-white'
+    },
+    {
+        title: 'Appeals & Complaints Policy Form',
+        download: "../assets/Appeals_&_Complaints_Policy.pdf",
+        image: membership,
         text: 'text-white'
     },
     {
