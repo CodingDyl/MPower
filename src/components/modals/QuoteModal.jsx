@@ -1,17 +1,17 @@
 import { useForm } from "@mantine/form";
 import {
     TextInput,
-    Textarea,
     Text,
     Paper,
     Group,
     Button,
     Stack,
-    Modal,
+    Modal, rem,
 } from "@mantine/core";
 import {useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
-import DropzoneButton from "./DropzoneButton.jsx";
+import {Dropzone, MIME_TYPES} from "@mantine/dropzone";
+import {IconFileImport, IconUpload, IconX} from "@tabler/icons-react";
 
 function QuoteModal({ opened, close }) {
     const quoteTypeOptions = [
@@ -23,15 +23,17 @@ function QuoteModal({ opened, close }) {
         'Subscription Packages'
     ]
 
+    const handleAttachmentChange = (file) => {
+        form.setValue("attachment", file);
+    };
+
     const formRef = useRef();
     const form = useForm({
         initialValues: {
             name: "",
-            company: "",
             emailAddress: "",
-            contactNumber: "",
             quoteType: "",
-            message: "",
+            attatchment: "",
         },
 
         validate: {
@@ -58,7 +60,7 @@ function QuoteModal({ opened, close }) {
                     to_name: "mPowerRatings",
                     from_email: form.email,
                     to_email: "info@mpowerratings.co.za",
-                    message: form.message,
+                    attachment: form.attachment,
                 },
                 'i_IFgvR2F8kYMIPmq'
             )
@@ -152,7 +154,41 @@ function QuoteModal({ opened, close }) {
                                         ))}
                                     </select>
 
-                                    <DropzoneButton />
+                                    <Dropzone
+                                        required
+                                        value={form.values.attatchment}
+                                        onDrop={handleAttachmentChange}
+                                        onReject={(files) => console.log('rejected files', files)}
+                                        maxSize={10 * 1024 ** 2}
+                                        accept={[MIME_TYPES.xls]}
+                                        radius="md"
+                                    >
+                                        <Group position="center" spacing="xl" style={{ minHeight: rem(220), pointerEvents: 'none' }}>
+                                            <Dropzone.Accept>
+                                                <IconUpload
+                                                    size="2.2rem"
+                                                    stroke={1.5}
+                                                    color="green"
+                                                />
+                                            </Dropzone.Accept>
+                                            <Dropzone.Reject>
+                                                <IconX
+                                                    size="2.2rem"
+                                                    stroke={1.5}
+                                                    color="red"
+                                                />
+                                            </Dropzone.Reject>
+                                            <Dropzone.Idle>
+                                                <IconFileImport size="3.2rem" stroke={1.5} />
+                                            </Dropzone.Idle>
+
+                                            <div>
+                                                <Text size="lg" className="text-center p-2" inline>
+                                                    Click on me or Drag and Upload the completed Company Information Form
+                                                </Text>
+                                            </div>
+                                        </Group>
+                                    </Dropzone>
 
                                 </>
 

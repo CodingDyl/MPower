@@ -5,6 +5,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 import Customers from "./slider/Customers.jsx";
+import React from "react";
 
 const FeedbackCard = ({
   index,
@@ -46,29 +47,35 @@ const FeedbackCard = ({
 const Feedback = () => {
   return (
       <>
-    <div className={`mt-12 bg-primary rounded-[20px]`}>
-      <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
-      >
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={`${styles.sectionHeadText} text-white`}>Client References.</h2>
-        </motion.div>
-      </div>
-      <div className={`-mt-20 pb-20 ${styles.paddingX} flex flex-wrap gap-7 sm:justify-center sm:align-center sm:items-center`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
-      </div>
-    </div>
         <div className="mt-10">
-          <div className="mb-2">
-            <h2 className={`${styles.sectionHeadText} text-white`}>Our Customers.</h2>
-          </div>
-          <Customers />
+            <motion.div variants={textVariant}>
+                <p className={styles.sectionSubText}>mpower family</p>
+                <h2 className={styles.sectionHeadTextContact}>Our Customers.
+                </h2>
+            </motion.div>
+            <Customers />
+
+            <motion.div variants={textVariant} className='mt-10 my-auto flex justify-center items-center text-center'>
+                <h2 className={styles.sectionHeadTextContact}>Impartiality and Confidentiality.
+                </h2>
+            </motion.div>
+
+            <div className="flex my-4 gap-6 flex-col justify-center text-center items-center">
+            <motion.p variants={fadeIn("left", "tween", 0.1, 1)} className="text-white font-bold md:text-[20px] xs:text-[15px] max-w-3xl leading-[30px]">
+                MPowerRatings (Pty) Ltd is governed by several principles as stipulated by the SANAS R47 - 03. One of which carries significant weighting is the principle of Impartiality and Confidentiality.
+            </motion.p>
+
+                <motion.p variants={fadeIn("left", "tween", 0.1, 1)} className="text-white font-extrabold md:text-[17px] xs:text-[12px] max-w-3xl leading-[30px]">
+                    Impartiality can be defined as:
+                </motion.p>
+
+            <motion.p variants={fadeIn("right", "tween", 0.2, 1)} className="text-white font-bold md:text-[20px] max-w-3xl xs:text-[15px] leading-[30px]">
+                The actual and perceived presence of objectivity. Being impartial is essential for a B-BBEE Verification Agency to be able to deliver a verification that results in a level which inspires confidence in the process. MPowerRatings comprehends that in order to obtain and maintain such confidence, MPowerRatings has to be able to demonstrate that its decisions are based on verifying objective evidence and that its decisions have not been improperly influenced by other interests or parties. We continue to endeavour to maintain our objectivity in respect of each verification that is held all while being professional, responsible, transparent and maintaining confidentiality.
+            </motion.p>
+            </div>
         </div>
   </>
   );
 };
 
-export default SectionWrapper(Feedback, "");
+export default SectionWrapper(Feedback, "impartiality");
