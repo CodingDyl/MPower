@@ -75,6 +75,8 @@
     flex-direction: column-reverse;
     padding: 2rem;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     margin-bottom: 2rem;
   }
   .image {
