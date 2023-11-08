@@ -43,8 +43,8 @@ const About = () => {
             <h2 className={styles.sectionHeadText}>About <span className="text-tertiary">mPower</span>Ratings</h2>
           </motion.div>
           <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-primary text-[17px] max-w-3xl leading-[30px]">
-          mPowerRatings is a SANASAccredited B-BBEE
-VerificationAgency with BVA number 204.
+          mPowerRatings is a SANAS Accredited B-BBEE
+Verification Agency with BVA number 204.
 mPowerRatings was established in 2004 and has been at the forefront of
 transformation for more than a decade. Through expert knowledge on B-BBEE,we aim to drive sustainable and meaningful transformation to 
 ensure inclusive growth within the South African economy. We are 
