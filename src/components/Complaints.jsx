@@ -23,7 +23,7 @@ const Complaints = () => {
                     </Text>
 
                     <div className="controls">
-                        <Button className="hover:opacity-100 hover:bg-transparent hover:b-2 hover:border-white hover:text-white-100 btn bg-white py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important" onClick={handleComplaint}>Lodge a Complaint/Appeal</Button>
+                        <Button className="hover:opacity-100 hover:bg-transparent hover:b-2 hover:border-white hover:text-white-100 btn bg-white py-3 px-8 rounded-xl outline-none w-fit text-tertiary font-bold shadow-md shadow-primary !important" onClick={handleComplaint}>Report Incident</Button>
                     </div>
                 </div>
                 <Lottie animationData={animationData} className="image" />
