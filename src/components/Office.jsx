@@ -54,13 +54,13 @@ const Office = () => {
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconUser />
                     </div>
-                    <Typography>Roxanne Abramson | 082 563 1136</Typography>
+                    <Typography>Lizelle de Jager | 082 784 0123</Typography>
                 </div>
                 <div className="flex gap-1 align-center items-center md:px-0 sm:px-2">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconUser />
                     </div>
-                    <Typography>roxanne@mpowerratings.co.za</Typography>
+                    <Typography>lizelle@mpowerratings.co.za</Typography>
                 </div>
             </motion.div>
 

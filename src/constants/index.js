@@ -181,7 +181,7 @@ const documents = [
     },
     {
         title: "ABP Membership Certificate",
-        download: "",
+        download: "../assets/ABP_Membership_Certificate_2023.pdf",
         image: membership,
         text: 'text-white'
     },
