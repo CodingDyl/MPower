@@ -25,38 +25,38 @@ const Office = () => {
                 At mPowerRatings, you always talk to a human!
             </motion.p>
 
-            <motion.div variants={fadeIn("left", "tween", 0.2, 1)} className="mt-4 mb-4 text-primary text-[22px] md:grid md:grid-cols-2 md:gap-6 xs:flex xs:flex-col xs:justify-start xs:items-start xs:gap-2">
-                <div className="flex gap-1 align-center items-center">
+            <motion.div variants={fadeIn("left", "tween", 0.2, 1)} className="mt-4 mb-4 text-primary text-[22px] md:grid md:grid-cols-2 md:gap-6 xs:flex xs:flex-col xs:justify-start xs:items-start xs:gap-4">
+                <div className="flex gap-1 align-center items-center md:px-0 sm:px-2">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconPhone />
                     </div>
                     <Typography>011-880-0060</Typography>
                 </div>
-                <div className="flex gap-1 align-center items-center">
+                <div className="flex gap-1 align-center items-center md:px-0 sm:px-2">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconDialpad />
                     </div>
                     <Typography>1. New Queries</Typography>
                 </div>
-                <div className="flex gap-1 align-center items-center">
+                <div className="flex gap-1 align-center items-center md:px-0 sm:px-2">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconMail />
                     </div>
                     <Typography>info@mpowerratings.co.za</Typography>
                 </div>
-                <div className="flex gap-1 align-center items-center">
+                <div className="flex gap-1 align-center items-center md:px-0 sm:px-2">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconLocation />
                     </div>
                     <Typography>The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196</Typography>
                 </div>
-                <div className="flex gap-1 align-center items-center">
+                <div className="flex gap-1 align-center items-center md:px-0 sm:px-2">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconUser />
                     </div>
                     <Typography>Roxanne Abramson | 082 563 1136</Typography>
                 </div>
-                <div className="flex gap-1 align-center items-center">
+                <div className="flex gap-1 align-center items-center md:px-0 sm:px-2">
                     <div className="flex justify-center items-center border-solid border-2 border-green-pink-gradient align-center rounded-full px-2 py-2 bg-white-100">
                         <IconUser />
                     </div>
