@@ -80,8 +80,13 @@
   }
   .body {
     text-align: center;
-    padding-right: 4rem;
+    padding-right: 0;
     margin: 2rem auto;
+  }
+
+  .controls {
+    margin: 0 auto;
+    padding: 0.5rem;
   }
 }
 

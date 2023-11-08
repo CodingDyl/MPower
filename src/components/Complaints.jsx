@@ -12,8 +12,8 @@ const Complaints = () => {
     return(
         <div className="wrapper" id="complaints">
                 <div className="body">
-                    <Title className="title">Complaints</Title>
-                    <Text fw={500} fz="lg" mb={5}>
+                    <Title className="title font-extrabold">Complaints</Title>
+                    <Text fw={500} fz="lg" mb={5} className="font-bold">
                         We are here to hear you
                     </Text>
                     <Text fz="sm">
