@@ -33,8 +33,8 @@ const Contact = () => {
 
         emailjs
             .send(
-                'service_8ug5t08',
-                'template_89r4q4d',
+                'service_9pvw52e',
+                'template_li79xnj',
                 {
                     from_name: form.name,
                     to_name: "mPowerRatings",
@@ -42,7 +42,7 @@ const Contact = () => {
                     to_email: "info@mpowerratings.co.za",
                     message: form.message,
                 },
-                'i_IFgvR2F8kYMIPmq'
+                'Oey1QJ3g-VzBNrF_V'
             )
             .then(
                 () => {
