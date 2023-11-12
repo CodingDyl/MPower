@@ -53,8 +53,8 @@ function QuoteModal({ opened, close }) {
 
         emailjs
             .send(
-                'service_8ug5t08',
-                'template_89r4q4d',
+                'service_9pvw52e',
+                'template_hmdileq',
                 {
                     from_name: form.name,
                     to_name: "mPowerRatings",
@@ -62,7 +62,7 @@ function QuoteModal({ opened, close }) {
                     to_email: "info@mpowerratings.co.za",
                     attachment: form.attachment,
                 },
-                'i_IFgvR2F8kYMIPmq'
+                'Oey1QJ3g-VzBNrF_V'
             )
             .then(
                 () => {
