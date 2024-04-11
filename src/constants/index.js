@@ -151,37 +151,37 @@ const navLinks = [
 const documents = [
     {
         title: "Company Profile",
-        download: "../../public/mPowerRatings_Company_Profile.pdf",
+        download: "mPowerRatings_Company_Profile.pdf",
         image: comPro,
         text: 'text-white'
     },
     {
         title: 'Company Information Form',
-        download: "../../public/Company_Information_Form.xls",
+        download: "Company_Information_Form.xls",
         image: comForm,
         text: 'text-white'
     },
     {
         title: 'Appeals & Complaints Policy Form',
-        download: "../../public/Appeals_&_Complaints_Policy.pdf",
+        download: "Appeals_&_Complaints_Policy.pdf",
         image: membership,
         text: 'text-white'
     },
     {
         title: 'Accreditation Certificate',
-        download: "../../public/BVA204_Certificate_of_Accreditation.pdf",
+        download: "BVA204_Certificate_of_Accreditation.pdf",
         image: accreCert,
         text: 'text-white'
     },
     {
         title: "B-BBEE Certificate",
-        download: "../../public/mPowerRatings_B-BBEE_Certificate.pdf",
+        download: "mPowerRatings_B-BBEE_Certificate.pdf",
         image: beeCert,
         text: 'text-white'
     },
     {
         title: "ABP Membership Certificate",
-        download: "../../public/mPower_ABP_2024_membershipcertificate.pdf",
+        download: "mPower_ABP_2024_membershipcertificate.pdf",
         image: membership,
         text: 'text-white'
     },
