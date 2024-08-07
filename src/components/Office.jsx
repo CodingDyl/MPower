@@ -12,7 +12,7 @@ const Office = () => {
         <>
             <motion.div variants={textVariant}>
                 <p className={styles.sectionSubText}>Find Us</p>
-                <h2 className={styles.sectionHeadText}>Head Office</h2>
+                <h2 className={styles.sectionHeadText}>Our Offices</h2>
             </motion.div>
 
             <motion.p variants={fadeIn("right", "tween", 0.1, 1)} className="mt-4 text-primary text-[17px] max-w-3xl leading-[30px]">
