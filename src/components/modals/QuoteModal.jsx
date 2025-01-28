@@ -12,6 +12,7 @@ import {useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 import {Dropzone, MIME_TYPES} from "@mantine/dropzone";
 import {IconFileImport, IconUpload, IconX} from "@tabler/icons-react";
+import { notifications } from '@mantine/notifications';
 
 function QuoteModal({ opened, close }) {
     const quoteTypeOptions = [
@@ -37,11 +38,12 @@ function QuoteModal({ opened, close }) {
         },
 
         validate: {
-            emailAddress: (val) => (/^\S+@\S+$/.test(val) ? null : "Invalid email"),
-            contactNumber: (val) =>
-                val.length <= 10
-                    ? "Please Ensure a correct number has been provided"
-                    : null,
+            name: (val) => (!val ? "Name is required" : null),
+            emailAddress: (val) => {
+                if (!val) return "Email is required";
+                return /^\S+@\S+$/.test(val) ? null : "Invalid email format";
+            },
+            quoteType: (val) => (!val ? "Quote type is required" : null),
         },
     });
 
@@ -49,6 +51,20 @@ function QuoteModal({ opened, close }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        const validation = form.validate();
+        if (validation.hasErrors) {
+            // Show validation errors
+            Object.keys(validation.errors).forEach(field => {
+                notifications.show({
+                    title: 'Validation Error',
+                    message: validation.errors[field],
+                    color: 'red'
+                });
+            });
+            return;
+        }
+
         setLoading(true);
 
         emailjs
@@ -56,26 +72,33 @@ function QuoteModal({ opened, close }) {
                 'service_9pvw52e',
                 'template_hmdileq',
                 {
-                    from_name: form.name,
+                    from_name: form.values.name,
                     to_name: "mPowerRatings",
-                    from_email: form.email,
+                    from_email: form.values.emailAddress,
                     to_email: "info@mpowerratings.co.za",
-                    attachment: form.attachment,
+                    from_quote: form.values.quoteType,
+                    from_attachment: form.values.attachment,
                 },
                 'Oey1QJ3g-VzBNrF_V'
             )
             .then(
                 () => {
                     setLoading(false);
-                    alert("Thank you. We will get back to you as soon as possible.");
-
+                    notifications.show({
+                        title: 'Success',
+                        message: 'Thank you. We will get back to you as soon as possible.',
+                        color: 'green'
+                    });
                     form.reset();
                 },
                 (error) => {
                     setLoading(false);
                     console.error(error);
-
-                    alert("Ahh, something went wrong. Please try again.");
+                    notifications.show({
+                        title: 'Error',
+                        message: 'Something went wrong. Please try again.',
+                        color: 'red'
+                    });
                 }
             );
     };

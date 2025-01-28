@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { notifications } from '@mantine/notifications';
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -17,6 +18,10 @@ const Contact = () => {
 
     const [loading, setLoading] = useState(false);
 
+    const validateEmail = (email) => {
+        return /^\S+@\S+$/.test(email);
+    };
+
     const handleChange = (e) => {
         const { target } = e;
         const { name, value } = target;
@@ -29,6 +34,44 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        // Validate form fields
+        if (!form.name) {
+            notifications.show({
+                title: 'Validation Error',
+                message: 'Name is required',
+                color: 'red'
+            });
+            return;
+        }
+        
+        if (!form.email) {
+            notifications.show({
+                title: 'Validation Error',
+                message: 'Email is required',
+                color: 'red'
+            });
+            return;
+        }
+
+        if (!validateEmail(form.email)) {
+            notifications.show({
+                title: 'Validation Error',
+                message: 'Invalid email format',
+                color: 'red'
+            });
+            return;
+        }
+
+        if (!form.message) {
+            notifications.show({
+                title: 'Validation Error',
+                message: 'Message is required',
+                color: 'red'
+            });
+            return;
+        }
+
         setLoading(true);
 
         emailjs
@@ -47,7 +90,11 @@ const Contact = () => {
             .then(
                 () => {
                     setLoading(false);
-                    alert("Thank you. We will get back to you as soon as possible.");
+                    notifications.show({
+                        title: 'Success',
+                        message: 'Thank you. We will get back to you as soon as possible.',
+                        color: 'green'
+                    });
 
                     setForm({
                         name: "",
@@ -58,8 +105,11 @@ const Contact = () => {
                 (error) => {
                     setLoading(false);
                     console.error(error);
-
-                    alert("Ahh, something went wrong. Please try again.");
+                    notifications.show({
+                        title: 'Error',
+                        message: 'Something went wrong. Please try again.',
+                        color: 'red'
+                    });
                 }
             );
     };
