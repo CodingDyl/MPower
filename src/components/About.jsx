@@ -50,7 +50,7 @@ transformation for more than a decade. Through expert knowledge on B-BBEE,we aim
 ensure inclusive growth within the South African economy. We are 
 therefore perfectly positioned to guide our clientsthrough the 
 transformation landscape.
-mPowerRatings is a 15% Black Female Owned Level 3 B-BBEE
+mPowerRatings is a 33% Black Female Owned Level 3 B-BBEE
 Contributor using the QSE Scorecard.
 To find out more about our range of services compete a contact form or contact us at (011) 880-0060; or at <a href="info@mpowerratings.co.za." className="underline text-blue-60 !important"><span className="text-blue">info@mpowerratings.co.za.</span></a>
           </motion.p>
