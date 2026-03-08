@@ -18,7 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <Notifications position="bottom-right" />
-      <div className="relative z-0 bg-white">
+      <div className="relative z-0 bg-white overflow-x-hidden">
         <div className="bg-bg-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Home />

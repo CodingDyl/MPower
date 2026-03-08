@@ -1,6 +1,6 @@
-import {motion} from "framer-motion";
-import {fadeIn, textVariant} from "../utils/motion.js";
-import {styles} from "../styles.js";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../utils/motion.js";
+import { styles } from "../styles.js";
 import { Grid, Accordion } from '@mantine/core';
 import { SectionWrapper } from '../hoc';
 import Complaints from "./Complaints.jsx";
@@ -52,7 +52,7 @@ const FAQ = () => {
                                 <Accordion.Item value="How long does the verification process take?">
                                     <Accordion.Control className="text-primary font-extrabold">How long does the verification process take?</Accordion.Control>
                                     <Accordion.Panel>
-                                        <p className="text-primary">Ideally 4-6 weeks (dependent on data submitted).
+                                        <p className="text-primary">Ideally 4-12 weeks (dependent on data submitted).
                                             There is an ability to do urgent verifications in just 2-3 weeks if required.</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
