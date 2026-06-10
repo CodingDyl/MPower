@@ -43,16 +43,7 @@ const About = () => {
             <h2 className={styles.sectionHeadText}>About <span className="text-tertiary">mPower</span>Ratings</h2>
           </motion.div>
           <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-primary text-[17px] max-w-3xl leading-[30px]">
-          mPowerRatings is a SANAS Accredited B-BBEE
-Verification Agency with BVA number 204.
-mPowerRatings was established in 2004 and has been at the forefront of
-transformation for more than a decade. Through expert knowledge on B-BBEE,we aim to drive sustainable and meaningful transformation to 
-ensure inclusive growth within the South African economy. We are 
-therefore perfectly positioned to guide our clientsthrough the 
-transformation landscape.
-mPowerRatings is a 33% Black Female Owned Level 3 B-BBEE
-Contributor using the QSE Scorecard.
-To find out more about our range of services compete a contact form or contact us at (011) 880-0060; or at <a href="info@mpowerratings.co.za." className="underline text-blue-60 !important"><span className="text-blue">info@mpowerratings.co.za.</span></a>
+          mPowerRatings is a SANAS Accredited B-BBEE Verification Agency with BVA number 204. mPowerRatings was established in 2004 and has been at the forefront of transformation for more than a decade. Through expert knowledge on B-BBEE, we aim to drive sustainable and meaningful transformation to ensure inclusive growth within the South African economy. We are therefore perfectly positioned to guide our clients through the transformation landscape. mPowerRatings is a 51% Black Female Owned Level 2 B-BBEE Contributor using the QSE Scorecard. To find out more about our range of services, please complete a contact form or contact us at (011) 880-0060; or at <a href="mailto:info@mpowerratings.co.za" className="underline text-blue-60 !important"><span className="text-blue">info@mpowerratings.co.za.</span></a>
           </motion.p>
     
           <div className='mt-20 flex flex-wrap gap-10'>

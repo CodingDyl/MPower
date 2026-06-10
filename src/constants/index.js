@@ -86,6 +86,10 @@ const navLinks = [
       title: 'Financial Sector Code',
       //icon: batteries,
     },
+    {
+      title: 'Legal Sector Code',
+      //icon: batteries,
+    },
   ];
 
   const footerLinks = [
