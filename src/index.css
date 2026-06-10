@@ -1,59 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --greenandpink-gradient: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  --brand-navy: #334367;
+  --brand-deep: #1a2d52;
+  --brand-gradient: linear-gradient(135deg, #1a2d52 0%, #334367 55%, #2e5b96 100%);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Kanit", sans-serif;
-  scroll-behavior: smooth;
-  color-scheme: dark;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
 
-html,
-body,
-#root {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
+  body {
+    font-family: "Source Sans 3", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-html {
-  scroll-padding-top: 96px;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Lexend", system-ui, sans-serif;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-padding-top: 96px;
+  }
 }
 
 .hash-span {
   scroll-margin-top: 96px;
 }
 
-.black-gradient {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #005691,
-    #003b6a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #005691,
-    #003b6a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
+/* Brand gradient — replaces the old off-brand teal-purple */
 .green-pink-gradient {
-  background: #00cea8;
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(135deg, #1a2d52 0%, #334367 55%, #2e5b96 100%);
 }
 
+.brand-gradient {
+  background: linear-gradient(135deg, #1a2d52 0%, #334367 55%, #2e5b96 100%);
+}
+
+.black-gradient {
+  background: linear-gradient(to right, #1a2d52, #334367);
+}
+
+/* Document carousel cards */
 .card {
   height: 27rem;
   width: 20rem;
@@ -64,62 +69,69 @@ html {
   background-size: cover;
   background-position: center;
   margin-right: 2rem;
-  border: 2px solid #003b6a;
+  border: 2px solid rgba(51, 67, 103, 0.35);
+  border-radius: 0.75rem;
+  overflow: hidden;
 }
 
 .title-card {
-  font-family: Greycliff CF, sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.35;
+  padding: 0.65rem 0.9rem;
+  background-color: rgba(10, 18, 40, 0.78);
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.375rem;
+  color: #f3f3f3;
+  letter-spacing: -0.01em;
 }
 
-.lottie-container {
-  width: 700px; /* Default width */
-  height: 700px; /* Default height */
+/* Customer logo slider */
+.mainContainer {
+  margin: 10px;
 }
 
-@media (max-width: 768px) {
-  .lottie-container {
-    width: 250px; /* Adjusted width for small screens */
-    height: 250px;
-    margin: 2rem auto;/* Adjusted height for small screens */
-  }
-  .wrapper {
-    flex-direction: column-reverse;
-  }
-  .image {
-    max-width: 100%;
-  }
-  .body {
-    text-align: center;
-    padding-right: 0;
-    margin: 2rem auto;
-  }
-
-  .controls {
-    margin: 0 auto;
-    padding: 0.5rem;
-  }
+.mainContainer .container {
+  background-color: transparent;
+  padding: 1rem 0;
 }
 
-@layer base {
-  * {
-    @apply font-[Kanit]
-  }
+.mainContainer .container img {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  filter: grayscale(30%) opacity(0.8);
+  transition: filter 0.2s ease;
 }
 
+.mainContainer .container img:hover {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* Mantine carousel indicators override */
+#forms .mantine-Carousel-indicator {
+  background-color: #9ca3af !important;
+  opacity: 0.9 !important;
+}
+
+#forms .mantine-Carousel-indicator[data-active] {
+  background-color: #334367 !important;
+  transform: scale(1.2);
+  opacity: 1 !important;
+}
+
+/* Wrapper for complaint modal / lottie layout */
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: calc(2rem * 2);
-  border-radius: 0.5rem;
-  background: radial-gradient(circle, rgba(170,166,195,1) 0%, rgba(51,67,103,1) 90%);;
-  border: var(--greenandpink-gradient);
+  border-radius: 0.75rem;
+  background: radial-gradient(circle, rgba(170, 166, 195, 1) 0%, rgba(51, 67, 103, 1) 90%);
 }
 
 .image {
@@ -134,7 +146,8 @@ html {
 }
 
 .title {
-  color: #f1f1f1;
+  font-family: "Lexend", sans-serif;
+  color: #f3f3f3;
   line-height: 1;
   margin-bottom: 1rem;
 }
@@ -161,30 +174,32 @@ html {
   border-bottom-left-radius: 0;
 }
 
-.mainContainer {
-  margin: 10px;
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .image {
+    max-width: 100%;
+  }
+  .body {
+    text-align: center;
+    padding-right: 0;
+    margin: 2rem auto;
+  }
+  .controls {
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
 }
 
-.mainContainer .container {
-  background-color: transparent;
-  padding: 1rem 0;
-}
-.mainContainer .container img{
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#forms .mantine-Carousel-indicator {
-  background-color: #9ca3af !important;
-  opacity: 0.9 !important;
-}
-
-#forms .mantine-Carousel-indicator[data-active] {
-  background-color: #1f2b46 !important;
-  transform: scale(1.2);
-  opacity: 1 !important;
+/* Accessibility: respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
