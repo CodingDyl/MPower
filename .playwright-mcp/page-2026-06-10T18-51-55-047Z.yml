@@ -1,0 +1,394 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "mPowerRatings logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "mPowerRatings logo" [ref=e8]
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "About" [ref=e11] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e12]:
+            - link "Accreditation" [ref=e13] [cursor=pointer]:
+              - /url: "#accredidation"
+          - listitem [ref=e14]:
+            - link "Verification" [ref=e15] [cursor=pointer]:
+              - /url: "#verification"
+          - listitem [ref=e16]:
+            - link "Get Assistance" [ref=e17] [cursor=pointer]:
+              - /url: "#faq"
+          - listitem [ref=e18]:
+            - link "Contact Us" [ref=e19] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=e20]:
+            - link "Get Started" [ref=e21] [cursor=pointer]:
+              - /url: "#contact"
+    - generic [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: Accredited B-BBEE Verification Agency
+          - heading "Ensuring Change Through Empowerment." [level=1] [ref=e27]:
+            - text: Ensuring Change Through
+            - text: Empowerment.
+          - paragraph [ref=e28]: mPowerRatings delivers credible, independent B-BBEE verification and advisory support to help organizations move forward with confidence.
+          - generic [ref=e29]:
+            - link "Learn More" [ref=e30] [cursor=pointer]:
+              - /url: "#faq"
+              - button "Learn More" [ref=e31]
+            - button "Get a Quote" [ref=e32] [cursor=pointer]
+          - paragraph [ref=e33]: Trusted by businesses across South Africa
+        - img [ref=e37]
+      - link "Scroll to About section" [ref=e179] [cursor=pointer]:
+        - /url: "#about"
+  - generic [ref=e182]:
+    - generic [ref=e183]:
+      - paragraph [ref=e184]: Introduction
+      - heading "About mPowerRatings" [level=2] [ref=e185]
+    - paragraph [ref=e186]:
+      - text: mPowerRatings is a SANAS Accredited B-BBEE Verification Agency with BVA number 204. Established in 2004, we have been at the forefront of transformation for more than a decade. Through expert knowledge on B-BBEE, we aim to drive sustainable and meaningful transformation to ensure inclusive growth within the South African economy. We are perfectly positioned to guide our clients through the transformation landscape. mPowerRatings is a 51% Black Female Owned Level 2 B-BBEE Contributor using the QSE Scorecard. To find out more, contact us at
+      - link "(011) 880-0060" [ref=e187] [cursor=pointer]:
+        - /url: tel:0118800060
+      - text: or
+      - link "info@mpowerratings.co.za" [ref=e188] [cursor=pointer]:
+        - /url: mailto:info@mpowerratings.co.za
+      - text: .
+    - generic [ref=e189]:
+      - generic [ref=e192] [cursor=pointer]:
+        - img "B-BBEE Verification & Certification" [ref=e194]
+        - heading "B-BBEE Verification & Certification" [level=3] [ref=e195]
+      - generic [ref=e198] [cursor=pointer]:
+        - img "B-BBEE Advisory Services" [ref=e200]
+        - heading "B-BBEE Advisory Services" [level=3] [ref=e201]
+      - generic [ref=e204] [cursor=pointer]:
+        - img "Competent Person's Reports and Opinions" [ref=e206]
+        - heading "Competent Person's Reports and Opinions" [level=3] [ref=e207]
+      - generic [ref=e210] [cursor=pointer]:
+        - img "B-BBEE Training" [ref=e212]
+        - heading "B-BBEE Training" [level=3] [ref=e213]
+  - generic [ref=e214]:
+    - generic [ref=e215]:
+      - paragraph [ref=e216]: Accreditation
+      - heading "B-BBEE Verification Services Across All Sectors" [level=2] [ref=e217]
+    - generic [ref=e218]:
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - img [ref=e222]
+          - heading "DTI" [level=3] [ref=e224]
+        - generic [ref=e225]:
+          - img [ref=e227]
+          - heading "MAC Sector Code" [level=3] [ref=e229]
+        - generic [ref=e230]:
+          - img [ref=e232]
+          - heading "ICT Sector Code" [level=3] [ref=e234]
+        - generic [ref=e235]:
+          - img [ref=e237]
+          - heading "Agri Sector Code" [level=3] [ref=e239]
+        - generic [ref=e240]:
+          - img [ref=e242]
+          - heading "Property Sector Code" [level=3] [ref=e244]
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - img [ref=e248]
+          - heading "Construction Sector Code" [level=3] [ref=e250]
+        - generic [ref=e251]:
+          - img [ref=e253]
+          - heading "Tourism Sector Code" [level=3] [ref=e255]
+        - generic [ref=e256]:
+          - img [ref=e258]
+          - heading "Integrated Sector Code" [level=3] [ref=e260]
+        - generic [ref=e261]:
+          - img [ref=e263]
+          - heading "Forestry Sector Code" [level=3] [ref=e265]
+        - generic [ref=e266]:
+          - img [ref=e268]
+          - heading "Financial Sector Code" [level=3] [ref=e270]
+        - generic [ref=e271]:
+          - img [ref=e273]
+          - heading "Legal Sector Code" [level=3] [ref=e275]
+    - generic [ref=e276]:
+      - generic [ref=e278]:
+        - generic [ref=e281]:
+          - heading "Company Profile" [level=3] [ref=e283]
+          - link "Download" [ref=e284] [cursor=pointer]:
+            - /url: mPowerRatings_Company_Profile.pdf
+            - img [ref=e285]
+            - text: Download
+        - generic [ref=e290]:
+          - heading "Company Information Form" [level=3] [ref=e292]
+          - link "Download" [ref=e293] [cursor=pointer]:
+            - /url: Company_Information_Form.xls
+            - img [ref=e294]
+            - text: Download
+        - generic [ref=e299]:
+          - heading "Appeals & Complaints Policy Form" [level=3] [ref=e301]
+          - link "Download" [ref=e302] [cursor=pointer]:
+            - /url: Appeals_&_Complaints_Policy.pdf
+            - img [ref=e303]
+            - text: Download
+        - generic [ref=e308]:
+          - heading "Accreditation Certificate" [level=3] [ref=e310]
+          - link "Download" [ref=e311] [cursor=pointer]:
+            - /url: BVA204_Certificate_of_Accreditation.pdf
+            - img [ref=e312]
+            - text: Download
+        - generic [ref=e317]:
+          - heading "B-BBEE Certificate" [level=3] [ref=e319]
+          - link "Download" [ref=e320] [cursor=pointer]:
+            - /url: mPowerRatings_B-BBEE_Certificate.pdf
+            - img [ref=e321]
+            - text: Download
+        - generic [ref=e326]:
+          - heading "ABP Membership Certificate" [level=3] [ref=e328]
+          - link "Download" [ref=e329] [cursor=pointer]:
+            - /url: mPower_ABP_2024_membershipcertificate.pdf
+            - img [ref=e330]
+            - text: Download
+      - generic:
+        - button [ref=e333] [cursor=pointer]
+        - button [ref=e334] [cursor=pointer]
+        - button [ref=e335] [cursor=pointer]
+      - generic:
+        - button [ref=e336] [cursor=pointer]:
+          - img [ref=e337]
+        - button [ref=e340] [cursor=pointer]:
+          - img [ref=e341]
+  - generic [ref=e345]:
+    - generic [ref=e346]:
+      - paragraph [ref=e347]: Verification
+      - heading "Step by Step Verification Approach" [level=2] [ref=e348]
+    - generic [ref=e349]:
+      - generic [ref=e352]:
+        - generic [ref=e353]: Admin
+        - generic [ref=e354]:
+          - generic [ref=e355]: Onboarding and signing of relevant documents
+          - generic [ref=e356]: 50% deposit payment
+          - generic [ref=e357]: Verification Analyst and Technical Signatory appointment
+      - generic [ref=e360]:
+        - generic [ref=e361]: Pre-Verification
+        - generic [ref=e362]:
+          - generic [ref=e363]: Verification Analyst Introduction
+          - generic [ref=e364]: Pre-Verification meeting
+          - generic [ref=e365]: Verification Documentation checklist
+      - generic [ref=e368]:
+        - generic [ref=e369]: Verification Commencement
+        - generic [ref=e370]:
+          - generic [ref=e371]: Data schedules sent to client
+          - generic [ref=e372]: Processing/Capturing data received from client
+          - generic [ref=e373]: Sample selection and sending sample to client
+      - generic [ref=e376]:
+        - generic [ref=e377]: Onsite Verification Preparation
+        - generic [ref=e378]:
+          - generic [ref=e379]: Receiving and processing of sampled evidence
+          - generic [ref=e380]: Sending out Verification Plan
+    - generic [ref=e381]:
+      - generic [ref=e384]:
+        - generic [ref=e385]: Onsite Verification
+        - generic [ref=e386]:
+          - generic [ref=e387]: Onsite
+          - generic [ref=e388]: Verification Commencement
+          - generic [ref=e389]: Opening Meeting
+          - generic [ref=e390]: Interviews
+          - generic [ref=e391]: Any known differences discussed
+          - generic [ref=e392]: Preliminary score discussion
+          - generic [ref=e393]: Signing off on any outstanding documentation
+      - generic [ref=e396]:
+        - generic [ref=e397]: Review Process
+        - generic [ref=e398]:
+          - generic [ref=e399]: File prepared and handed over to Technical Signatory within 5 working days after onsite verification
+          - generic [ref=e400]: File review
+          - generic [ref=e401]: Addressing of review notes
+          - generic [ref=e402]: File finalization
+      - generic [ref=e405]:
+        - generic [ref=e406]: Preliminary Report and Appeal Process
+        - generic [ref=e407]:
+          - generic [ref=e408]: Preliminary Report and Final invoice sent to client with detailed scoring
+          - generic [ref=e409]: Client has 5 business days to appeal/dispute or accept the score
+          - generic [ref=e410]: If score is appealed/disputed,this process is managed and resolution finalized by Independent Team to those who carried out the verification
+      - generic [ref=e413]:
+        - generic [ref=e414]: B-BBEE Certification
+        - generic [ref=e415]:
+          - generic [ref=e416]: Once the final payment is made the B-BBEE Certificate is issued
+          - generic [ref=e417]: The client satisfaction survey is sent to client to rate service received from mPowerRatings
+          - generic [ref=e418]: Once the satisfaction survey has been received the verification file is archived
+  - generic [ref=e423]:
+    - generic [ref=e424]:
+      - paragraph [ref=e425]: Frequently Asked Questions
+      - heading "FAQ" [level=2] [ref=e426]
+    - paragraph [ref=e427]: At our mPower Ratings, we understand that navigating the intricacies of B-BBEE can be both challenging and crucial for businesses in South Africa. In this FAQ section, we aim to provide you with clear and concise answers to common questions about B-BBEE. Whether you're new to the concept or looking for specific insights, our goal is to help you better understand why B-BBEE is important and how it can positively impact your organization.
+    - generic [ref=e429]:
+      - button "What is Broad-Based Economic Empowerment?" [ref=e434] [cursor=pointer]:
+        - img [ref=e436]
+        - generic [ref=e438]: What is Broad-Based Economic Empowerment?
+      - button "What are the different BEE rating types?" [ref=e443] [cursor=pointer]:
+        - img [ref=e445]
+        - generic [ref=e447]: What are the different BEE rating types?
+      - button "How long does the verification process take?" [ref=e452] [cursor=pointer]:
+        - img [ref=e454]
+        - generic [ref=e456]: How long does the verification process take?
+      - button "Can I obtain a PDF version of my certificate ?" [ref=e461] [cursor=pointer]:
+        - img [ref=e463]
+        - generic [ref=e465]: Can I obtain a PDF version of my certificate ?
+      - button "What are the different products you offer?" [ref=e470] [cursor=pointer]:
+        - img [ref=e472]
+        - generic [ref=e474]: What are the different products you offer?
+      - button "Where can we find you?" [ref=e479] [cursor=pointer]:
+        - img [ref=e481]
+        - generic [ref=e483]: Where can we find you?
+    - generic [ref=e485]:
+      - generic [ref=e486]:
+        - heading "Complaints" [level=1] [ref=e487]
+        - generic [ref=e488]: We are here to hear you
+        - generic [ref=e489]: "mPowerRatings (Pty) Ltd is committed to ensuring that all complaints and appeals are handled fairly, methodically and timeously to give confidence that the B-BBEE Verification Process is accurate and impartial. An Appeal/Complaint: To be put in writing and sent to info@mpowerratings.co.za"
+        - button "Report Incident" [ref=e491] [cursor=pointer]:
+          - generic [ref=e493]: Report Incident
+      - img [ref=e495]
+  - generic [ref=e637]:
+    - generic [ref=e638]:
+      - paragraph [ref=e639]: Our clients
+      - heading "Trusted by Leading Organisations." [level=2] [ref=e640]
+    - generic [ref=e643]:
+      - button "← Previous" [ref=e644] [cursor=pointer]
+      - generic [ref=e646]:
+        - img [ref=e650]
+        - img [ref=e654]
+        - img [ref=e658]
+        - img "mpact" [ref=e662]
+        - img "Deloitte" [ref=e666]
+        - img "rbh" [ref=e670]
+        - img [ref=e674]
+        - img [ref=e678]
+        - img [ref=e682]
+        - img [ref=e686]
+        - img [ref=e690]
+        - img [ref=e694]
+        - img [ref=e698]
+        - img [ref=e702]
+        - img [ref=e706]
+      - button "→ Next" [ref=e707] [cursor=pointer]
+    - heading "Impartiality & Confidentiality." [level=2] [ref=e709]
+    - generic [ref=e710]:
+      - paragraph [ref=e711]: MPowerRatings (Pty) Ltd is governed by several principles as stipulated by the SANAS R47-03. One of which carries significant weighting is the principle of Impartiality and Confidentiality.
+      - paragraph [ref=e712]: "Impartiality can be defined as:"
+      - paragraph [ref=e713]: The actual and perceived presence of objectivity. Being impartial is essential for a B-BBEE Verification Agency to deliver a verification that inspires confidence in the process. MPowerRatings demonstrates that its decisions are based on verifying objective evidence and have not been improperly influenced by other interests or parties. We maintain our objectivity in respect of each verification while being professional, responsible, transparent and maintaining confidentiality.
+  - generic [ref=e718]:
+    - generic [ref=e719]:
+      - paragraph [ref=e720]: Find Us
+      - heading "Our Offices" [level=2] [ref=e721]
+    - paragraph [ref=e722]:
+      - text: We're ready to lead you into the future of B-BBEE. You're not going to hit a ridiculously long phone menu when you call us. Your email isn't going to the inbox abyss, never to be seen or heard from again. At mPowerRatings, we provide the exceptional service we'd want to experience ourselves!
+      - text: We operate in an industry built on trust — from the first contact past your tenth verification with us. At mPowerRatings, you always talk to a human!
+    - generic [ref=e723]:
+      - generic [ref=e724]:
+        - img [ref=e726]
+        - generic [ref=e728]: 011-880-0060
+      - generic [ref=e729]:
+        - img [ref=e731]
+        - generic [ref=e739]: 1. New Queries
+      - generic [ref=e740]:
+        - img [ref=e742]
+        - link "info@mpowerratings.co.za" [ref=e746] [cursor=pointer]:
+          - /url: mailto:info@mpowerratings.co.za
+      - generic [ref=e747]:
+        - img [ref=e749]
+        - generic [ref=e752]: The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196
+      - generic [ref=e753]:
+        - img [ref=e755]
+        - generic [ref=e759]:
+          - generic [ref=e760]: Lizelle de Jager
+          - generic [ref=e761]: 082 784 0123
+      - generic [ref=e762]:
+        - img [ref=e764]
+        - link "lizelle@mpowerratings.co.za" [ref=e768] [cursor=pointer]:
+          - /url: mailto:lizelle@mpowerratings.co.za
+    - paragraph [ref=e773]: Loading map...
+  - generic [ref=e776]:
+    - generic [ref=e777]:
+      - paragraph [ref=e778]: Get in touch
+      - heading "Contact Us." [level=3] [ref=e779]
+      - generic [ref=e780]:
+        - generic [ref=e781]:
+          - generic [ref=e782]: Your Name
+          - textbox "Your Name" [ref=e783]:
+            - /placeholder: What's your name?
+        - generic [ref=e784]:
+          - generic [ref=e785]: Email Address
+          - textbox "Email Address" [ref=e786]:
+            - /placeholder: What's your email address?
+        - generic [ref=e787]:
+          - generic [ref=e788]: Message
+          - textbox "Message" [ref=e789]:
+            - /placeholder: How can we help you?
+        - button "Send Message" [ref=e790] [cursor=pointer]
+    - paragraph [ref=e796]: 0.00%
+  - contentinfo [ref=e801]:
+    - generic [ref=e802]:
+      - generic [ref=e803]:
+        - generic [ref=e804]:
+          - img "mPowerRatings" [ref=e805]
+          - paragraph [ref=e806]: Ensuring change through Empowerment.
+          - paragraph [ref=e807]: SANAS Accredited · BVA No. 204
+        - generic [ref=e808]:
+          - generic [ref=e809]:
+            - heading "About" [level=4] [ref=e810]
+            - list [ref=e811]:
+              - listitem [ref=e812]:
+                - link "Who we are" [ref=e813] [cursor=pointer]:
+                  - /url: "#about"
+              - listitem [ref=e814]:
+                - link "Certificate" [ref=e815] [cursor=pointer]:
+                  - /url: "#forms"
+              - listitem [ref=e816]:
+                - link "Contact" [ref=e817] [cursor=pointer]:
+                  - /url: "#contact"
+              - listitem [ref=e818]:
+                - link "FAQ" [ref=e819] [cursor=pointer]:
+                  - /url: "#faq"
+          - generic [ref=e820]:
+            - heading "Declarations" [level=4] [ref=e821]
+            - list [ref=e822]:
+              - listitem [ref=e823]:
+                - link "Complaints, appeals and disputes" [ref=e824] [cursor=pointer]:
+                  - /url: "#complaints"
+              - listitem [ref=e825]:
+                - link "Impartiality Statement" [ref=e826] [cursor=pointer]:
+                  - /url: "#impartiality"
+              - listitem [ref=e827]:
+                - link "B-BBEE Consulting" [ref=e828] [cursor=pointer]:
+                  - /url: "#faq"
+              - listitem [ref=e829]:
+                - link "B-BBEE Certificate" [ref=e830] [cursor=pointer]:
+                  - /url: "#forms"
+              - listitem [ref=e831]:
+                - link "Accreditation" [ref=e832] [cursor=pointer]:
+                  - /url: "#accredidation"
+              - listitem [ref=e833]:
+                - link "Youth Employment Service" [ref=e834] [cursor=pointer]:
+                  - /url: "#faq"
+          - generic [ref=e835]:
+            - heading "Information" [level=4] [ref=e836]
+            - list [ref=e837]:
+              - listitem [ref=e838]:
+                - link "Verification Approach" [ref=e839] [cursor=pointer]:
+                  - /url: "#verification"
+              - listitem [ref=e840]:
+                - link "Complaints" [ref=e841] [cursor=pointer]:
+                  - /url: "#complaints"
+              - listitem [ref=e842]:
+                - link "Accreditation" [ref=e843] [cursor=pointer]:
+                  - /url: "#accreditation"
+              - listitem [ref=e844]:
+                - link "BEE Directory" [ref=e845] [cursor=pointer]:
+                  - /url: https://cloud.procureactiv.co.za/procurement/suppliers/advanced-search
+      - generic [ref=e846]:
+        - paragraph [ref=e847]: © 2026 mPowerRatings (Pty) Ltd. All rights reserved.
+        - generic [ref=e848]:
+          - link "Twitter / X" [ref=e849] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e850]
+          - link "LinkedIn" [ref=e852] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e853]
+          - link "Instagram" [ref=e856] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e857]
