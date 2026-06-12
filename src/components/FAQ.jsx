@@ -52,8 +52,7 @@ const FAQ = () => {
                                 <Accordion.Item value="How long does the verification process take?">
                                     <Accordion.Control className="text-primary font-extrabold">How long does the verification process take?</Accordion.Control>
                                     <Accordion.Panel>
-                                        <p className="text-primary">Ideally 4-12 weeks (dependent on data submitted).
-                                            There is an ability to do urgent verifications in just 2-3 weeks if required.</p>
+                                        <p className="text-primary">Standard verifications are completed in 4–12 weeks, depending on data submitted. A fast-track option is available for clients who require a quicker turnaround — this is concluded in a shorter timeframe at a 50% premium on the standard verification invoice.</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
                             </Accordion>

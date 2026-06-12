@@ -52,9 +52,9 @@ const About = () => {
         transformation to ensure inclusive growth within the South African economy. We are perfectly
         positioned to guide our clients through the transformation landscape.{" "}
         <span className="font-semibold text-tertiary">
-          mPowerRatings is a 51% Black Female Owned Level 2 B-BBEE Contributor
+          mPowerRatings is a 51% Black Female Owned, Level 2 B-BBEE Contributor.
         </span>{" "}
-        using the QSE Scorecard. To find out more, contact us at{" "}
+        To find out more, contact us at{" "}
         <a
           href="tel:0118800060"
           className="text-tertiary underline decoration-tertiary/40 underline-offset-2 hover:decoration-tertiary transition-all duration-200"

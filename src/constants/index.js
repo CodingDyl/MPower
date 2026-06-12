@@ -75,7 +75,7 @@ const navLinks = [
       //icon: autoElectrical,
     },
     {
-      title: "Integrated Sector Code",
+      title: "Integrated Transport Sector Code",
       //icon: inspection,
     },
     {
@@ -83,7 +83,7 @@ const navLinks = [
       //icon: batteries,
     },
     {
-      title: 'Financial Sector Code',
+      title: 'Financial Services Sector Code',
       //icon: batteries,
     },
     {
@@ -194,27 +194,43 @@ const documents = [
 const testimonials = [
   {
     testimonial:
-      "The only place I would recommend. Love the people and the service!",
-    name: "John Doe",
-    designation: "Client",
-    company: "mPowerRatings",
-    image: "https://randomuser.me/api/portraits/lego/2.jpg",
+      "mPowerRatings delivers a professional and thorough verification process. Their team’s expertise in B-BBEE compliance gives us full confidence in our certification.",
+    name: "Tanucia Coopasamy",
+    designation: "Contact",
+    company: "Shared Services",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     testimonial:
-      "Very professional. It’s the only place I trust in the industry.",
-    name: "Jane Doe",
-    designation: "Client",
-    company: "mPowerRatings",
-    image: "https://randomuser.me/api/portraits/lego/4.jpg",
+      "A reliable and highly competent B-BBEE verification partner. Their attention to detail and transparent process makes compliance straightforward.",
+    name: "Portia Selani",
+    designation: "Contact",
+    company: "Deloitte",
+    image: "https://randomuser.me/api/portraits/women/55.jpg",
   },
   {
     testimonial:
-      "The best place on planet earth would highly recommend",
-    name: "Anne Human",
-    designation: "Client",
-    company: "mPowerRatings",
-    image: "https://randomuser.me/api/portraits/lego/3.jpg",
+      "We trust mPowerRatings year after year for our B-BBEE verification. Their team is knowledgeable, efficient, and always professional.",
+    name: "Thuli Tabudi",
+    designation: "Contact",
+    company: "SPAR",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+  },
+  {
+    testimonial:
+      "mPowerRatings’ risk-based approach and digital-first process makes them the most convenient and credible verification agency we’ve worked with.",
+    name: "Mpho Nethonzhe",
+    designation: "Contact",
+    company: "Bafokeng Holdings",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    testimonial:
+      "Their expertise across multiple sector codes and the quality of their reporting sets mPowerRatings apart in the B-BBEE verification space.",
+    name: "Anshen Kishun",
+    designation: "Contact",
+    company: "PwC",
+    image: "https://randomuser.me/api/portraits/men/47.jpg",
   },
 ];
 
