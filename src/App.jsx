@@ -23,12 +23,11 @@ function App() {
           <Navbar />
           <Home />
         </div>
-        {/* Impartiality immediately after hero + logo ticker */}
+        <About />
         <div className="relative z-0 bg-black-100">
           <Feedback />
           <StarsCanvas />
         </div>
-        <About />
         <Accreditation />
         <div className="relative z-0 bg-black-100">
           <Verification />
