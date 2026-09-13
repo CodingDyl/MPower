@@ -46,14 +46,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-5 text-primary text-[17px] max-w-3xl leading-[1.85]"
       >
-        mPowerRatings is a SANAS Accredited B-BBEE Verification Agency with BVA number 204.
-        Established in 2004, we have been at the forefront of transformation for more than a
-        decade. Through expert knowledge on B-BBEE, we aim to drive sustainable and meaningful
-        transformation to ensure inclusive growth within the South African economy. We are perfectly
-        positioned to guide our clients through the transformation landscape.{" "}
+        mPowerRatings is a SANAS Accredited B-BBEE Verification Agency (BVA 204).
+        Established in 2004, we have been at the forefront of transformation for over two decades.
+        Our tagline — <span className="font-semibold text-tertiary">Ensuring change through empowerment</span> —
+        guides how we work: expert B-BBEE knowledge that drives sustainable, inclusive growth across
+        South Africa. We guide clients through the transformation landscape with credibility and care.{" "}
         <span className="font-semibold text-tertiary">
           mPowerRatings is a 51% Black Female Owned, Level 2 B-BBEE Contributor.
         </span>{" "}
+        Ownership: Lizelle de Jager, Magret Mothibi, Jeanet Mahlalela, and Jaques Koekemoer.
         To find out more, contact us at{" "}
         <a
           href="tel:0118800060"

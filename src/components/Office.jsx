@@ -56,12 +56,14 @@ const Office = () => {
           </a>
         </ContactItem>
         <ContactItem icon={IconMapPin}>
-          The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196
+          WeWork - The Link, 173 Oxford Road, Rosebank, Johannesburg 2196
         </ContactItem>
         <ContactItem icon={IconUser}>
           <div className="flex flex-col gap-0.5">
-            <span className="font-semibold text-tertiary">Lizelle de Jager</span>
-            <span>082 784 0123</span>
+            <span className="font-semibold text-tertiary">Ownership &amp; leadership</span>
+            <span>Lizelle de Jager · Magret Mothibi · Jeanet Mahlalela · Jaques Koekemoer</span>
+            <span className="text-[14px] text-primary/80">Verification Managers / SANAS Technical Signatories: Jeanet Mahlalela &amp; Magret Mothibi · Jaques Koekemoer — SANAS Approved Technical Signatory · Head of Sales &amp; Marketing — TBA</span>
+            <span className="mt-1">Lizelle de Jager: 082 784 0123</span>
           </div>
         </ContactItem>
         <ContactItem icon={IconMail}>
