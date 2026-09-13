@@ -56,7 +56,7 @@ const Office = () => {
           </a>
         </ContactItem>
         <ContactItem icon={IconMapPin}>
-          WeWork - The Link, 173 Oxford Road, Rosebank, Johannesburg 2196
+          The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196
         </ContactItem>
         <ContactItem icon={IconUser}>
           <div className="flex flex-col gap-0.5">

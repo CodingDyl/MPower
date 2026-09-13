@@ -4,7 +4,7 @@ function MapComponent() {
     const [isLoading, setIsLoading] = useState(true);
     const [mapLoaded, setMapLoaded] = useState(false);
     
-    const address = "WeWork - The Link, 173 Oxford Road, Rosebank, Johannesburg 2196";
+    const address = "The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196";
     const encodedAddress = encodeURIComponent(address);
     const googleMapsUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${encodedAddress}&zoom=15`;
 
