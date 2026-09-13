@@ -12,8 +12,10 @@ import { styles } from "../styles.js";
 import { motion } from "framer-motion";
 import MapComponent from "./MapContainer.jsx";
 
-const ContactItem = ({ icon: Icon, children }) => (
-  <div className="flex gap-3.5 items-start rounded-2xl border border-tertiary/10 bg-white shadow-card p-4 sm:p-5 transition-shadow duration-200 hover:shadow-card-hover">
+const ContactItem = ({ icon: Icon, children, className = "" }) => (
+  <div
+    className={`flex gap-3.5 items-start rounded-2xl border border-tertiary/10 bg-white shadow-card p-4 sm:p-5 transition-shadow duration-200 hover:shadow-card-hover ${className}`}
+  >
     <div className="shrink-0 flex justify-center items-center w-10 h-10 rounded-full bg-tertiary/10 border border-tertiary/20 text-tertiary">
       <Icon size={17} strokeWidth={1.75} />
     </div>
@@ -55,6 +57,11 @@ const Office = () => {
       >
         <ContactItem icon={IconPhone}>011-880-0060</ContactItem>
         <ContactItem icon={IconDialpad}>1. New Queries</ContactItem>
+
+        <ContactItem icon={IconMapPin} className="md:col-span-2">
+          The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196
+        </ContactItem>
+
         <ContactItem icon={IconMail}>
           <a
             href="mailto:info@mpowerratings.co.za"
@@ -63,11 +70,17 @@ const Office = () => {
             info@mpowerratings.co.za
           </a>
         </ContactItem>
-        <ContactItem icon={IconMapPin}>
-          The Link, 173 Oxford Road, Rosebank, Johannesburg, 2196
+        <ContactItem icon={IconMail}>
+          <a
+            href="mailto:lizelle@mpowerratings.co.za"
+            className="hover:text-tertiary transition-colors duration-200"
+          >
+            lizelle@mpowerratings.co.za
+          </a>
         </ContactItem>
-        <ContactItem icon={IconUser}>
-          <div className="flex flex-col gap-0.5">
+
+        <ContactItem icon={IconUser} className="md:col-span-2">
+          <div className="flex flex-col gap-1">
             <span className="font-semibold text-tertiary">
               Ownership &amp; leadership
             </span>
@@ -82,14 +95,6 @@ const Office = () => {
             </span>
             <span className="mt-1">Lizelle de Jager: 082 784 0123</span>
           </div>
-        </ContactItem>
-        <ContactItem icon={IconMail}>
-          <a
-            href="mailto:lizelle@mpowerratings.co.za"
-            className="hover:text-tertiary transition-colors duration-200"
-          >
-            lizelle@mpowerratings.co.za
-          </a>
         </ContactItem>
       </motion.div>
 
