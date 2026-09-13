@@ -45,7 +45,7 @@
   scroll-margin-top: 96px;
 }
 
-/* Brand gradient — replaces the old off-brand teal-purple */
+/* Brand gradient: replaces the old off-brand teal-purple */
 .green-pink-gradient {
   background: linear-gradient(135deg, #1a2d52 0%, #334367 55%, #2e5b96 100%);
 }
@@ -69,9 +69,10 @@
   background-size: cover;
   background-position: center;
   margin-right: 2rem;
-  border: 2px solid rgba(51, 67, 103, 0.35);
-  border-radius: 0.75rem;
+  border: 1.5px solid rgba(51, 67, 103, 0.28);
+  border-radius: 1.25rem;
   overflow: hidden;
+  box-shadow: 0px 20px 60px -10px rgba(51, 67, 103, 0.12);
 }
 
 .title-card {
@@ -82,34 +83,96 @@
   padding: 0.65rem 0.9rem;
   background-color: rgba(10, 18, 40, 0.78);
   width: 100%;
-  border-radius: 0.375rem;
+  border-radius: 0.75rem;
   color: #f3f3f3;
   letter-spacing: -0.01em;
 }
 
-/* Customer logo slider */
-.mainContainer {
-  margin: 10px;
+/* Hero client logo marquee — continuous, no hover pause */
+.client-marquee {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
-.mainContainer .container {
-  background-color: transparent;
-  padding: 1rem 0;
+.client-marquee__viewport {
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
 }
 
-.mainContainer .container img {
-  height: 110px;
+.client-marquee__track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 2.75rem;
+  animation: client-marquee-scroll 42s linear infinite;
+  will-change: transform;
+}
+
+.client-marquee__item {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  text-align: center;
-  filter: grayscale(30%) opacity(0.8);
-  transition: filter 0.2s ease;
+  height: 3.25rem;
 }
 
-.mainContainer .container img:hover {
-  filter: grayscale(0%) opacity(1);
+.client-marquee__item img {
+  height: 2.35rem;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.35) opacity(0.55);
+  transition: filter 0.25s ease;
+}
+
+@media (min-width: 640px) {
+  .client-marquee__item {
+    height: 3.75rem;
+  }
+  .client-marquee__item img {
+    height: 2.75rem;
+    max-width: 160px;
+  }
+  .client-marquee__track {
+    gap: 3.5rem;
+  }
+}
+
+@keyframes client-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .client-marquee__track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto;
+    row-gap: 1.25rem;
+  }
 }
 
 /* Mantine carousel indicators override */
@@ -124,14 +187,17 @@
   opacity: 1 !important;
 }
 
-/* Wrapper for complaint modal / lottie layout */
+/* Complaints block: brand navy gradient card */
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: calc(2rem * 2);
-  border-radius: 0.75rem;
-  background: radial-gradient(circle, rgba(170, 166, 195, 1) 0%, rgba(51, 67, 103, 1) 90%);
+  gap: 1.5rem;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: radial-gradient(circle at 30% 20%, rgba(170, 166, 195, 0.95) 0%, rgba(51, 67, 103, 1) 72%);
+  box-shadow: 0px 20px 60px -10px rgba(51, 67, 103, 0.28);
 }
 
 .image {
@@ -148,14 +214,15 @@
 .title {
   font-family: "Lexend", sans-serif;
   color: #f3f3f3;
-  line-height: 1;
-  margin-bottom: 1rem;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
 }
 
 .controls {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1.75rem;
 }
 
 .inputWrapper {
@@ -177,6 +244,8 @@
 @media (max-width: 768px) {
   .wrapper {
     flex-direction: column-reverse;
+    padding: 2rem 1.25rem;
+    border-radius: 1.25rem;
   }
   .image {
     max-width: 100%;
@@ -184,11 +253,11 @@
   .body {
     text-align: center;
     padding-right: 0;
-    margin: 2rem auto;
+    margin: 1.25rem auto 0;
   }
   .controls {
-    margin: 0 auto;
-    padding: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0;
   }
 }
 

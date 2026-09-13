@@ -24,16 +24,16 @@ function App() {
           <Home />
         </div>
         <About />
+        <div className="relative z-0 bg-black-100">
+          <Feedback />
+          <StarsCanvas />
+        </div>
         <Accreditation />
         <div className="relative z-0 bg-black-100">
           <Verification />
           <StarsCanvas />
         </div>
         <FAQ />
-        <div className="relative z-0 bg-black-100">
-          <Feedback />
-          <StarsCanvas />
-        </div>
         <Office />
         <div className="relative z-0 bg-black-100">
           <Contact />

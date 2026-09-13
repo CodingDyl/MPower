@@ -5,6 +5,13 @@ import { navLinks } from "../constants";
 import { logo } from "../assets";
 import { MenuToggleIcon } from "@/components/ui/menu-toggle-icon";
 
+const primaryLinks = navLinks.filter((l) =>
+  ["About", "Accreditation", "Verification"].includes(l.title)
+);
+const secondaryLinks = navLinks.filter((l) =>
+  ["Get Assistance", "Contact Us"].includes(l.title)
+);
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -27,65 +34,109 @@ const Navbar = () => {
     };
   }, [toggle]);
 
+  const openQuote = () => {
+    setActive("Get a quote");
+    setToggle(false);
+    window.dispatchEvent(new Event("mpower:open-quote"));
+  };
+
+  const linkMuted = scrolled
+    ? "text-tertiary/80 hover:text-tertiary"
+    : "text-white/80 hover:text-white";
+  const linkActive = scrolled ? "text-tertiary" : "text-white";
+
   return (
     <>
       <nav
-        className={`${styles.paddingX} w-full flex items-center py-4 fixed top-0 z-40 transition-all duration-300 ${
+        className={`${styles.paddingX} w-full fixed top-0 z-40 transition-all duration-300 ${
           scrolled
-            ? "bg-white/95 backdrop-blur-md shadow-[0_1px_24px_rgba(51,67,103,0.10)] border-b border-tertiary/10"
-            : "bg-white-100"
+            ? "border-b border-tertiary/10 bg-white/90 py-3 shadow-[0_1px_24px_rgba(51,67,103,0.10)] backdrop-blur-md"
+            : "border-b border-transparent bg-transparent py-4 backdrop-blur-[2px]"
         }`}
       >
-        <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-          <Link
-            to="/"
-            className="flex items-center gap-2"
-            onClick={() => {
-              setActive("");
-              window.scrollTo(0, 0);
-            }}
-          >
-            <img src={logo} alt="mPowerRatings logo" className="h-10 object-contain" />
-          </Link>
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4">
+          {/* Left: logo + primary pill */}
+          <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+            <Link
+              to="/"
+              className="shrink-0"
+              onClick={() => {
+                setActive("");
+                window.scrollTo(0, 0);
+              }}
+            >
+              <img
+                src={logo}
+                alt="mPowerRatings logo"
+                className={`h-9 object-contain transition sm:h-10 ${
+                  scrolled ? "" : "brightness-0 invert"
+                }`}
+              />
+            </Link>
 
-          <ul className="list-none hidden sm:flex flex-row gap-7 items-center">
-            {navLinks.map((link) => (
-              <li
-                key={link.id}
-                className="relative"
-                onClick={() => setActive(link.title)}
-              >
-                <a
-                  href={`${link.id}`}
-                  className={`text-[15px] font-medium cursor-pointer transition-colors duration-200 pb-1 ${
-                    active === link.title
-                      ? "text-tertiary"
-                      : "text-primary hover:text-tertiary"
-                  }`}
-                >
-                  {link.title}
-                </a>
-                {active === link.title && (
-                  <span className="absolute -bottom-0.5 left-0 right-0 h-[2px] bg-tertiary rounded-full" />
-                )}
-              </li>
-            ))}
-            <li>
+            <ul
+              className={`list-none hidden items-center gap-1 rounded-full px-1.5 py-1 md:flex ${
+                scrolled
+                  ? "border border-tertiary/10 bg-tertiary/[0.06]"
+                  : "border border-white/15 bg-white/10 backdrop-blur-md"
+              }`}
+            >
+              {primaryLinks.map((link) => (
+                <li key={link.id}>
+                  <a
+                    href={`${link.id}`}
+                    onClick={() => setActive(link.title)}
+                    className={`inline-flex items-center rounded-full px-3.5 py-1.5 text-[13px] font-medium tracking-wide transition-colors duration-200 lg:px-4 lg:text-[14px] ${
+                      active === link.title ? linkActive : linkMuted
+                    }`}
+                  >
+                    {link.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right: secondary + CTA */}
+          <div className="hidden items-center gap-5 md:flex lg:gap-6">
+            {secondaryLinks.map((link) => (
               <a
-                href="#contact"
-                className="bg-tertiary text-white text-[14px] font-semibold px-5 py-2 rounded-lg hover:bg-brand-deep transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/60 focus-visible:ring-offset-2"
-                onClick={() => setActive("Contact Us")}
+                key={link.id}
+                href={`${link.id}`}
+                onClick={() => setActive(link.title)}
+                className={`text-[13px] font-medium tracking-wide transition-colors duration-200 lg:text-[14px] ${
+                  active === link.title ? linkActive : linkMuted
+                }`}
               >
-                Get Started
+                {link.title === "Contact Us" ? "Contact" : link.title}
               </a>
-            </li>
-          </ul>
+            ))}
+            <button
+              type="button"
+              onClick={openQuote}
+              className={`inline-flex items-center gap-1.5 rounded-full px-5 py-2 text-[13px] font-semibold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 lg:text-[14px] ${
+                scrolled
+                  ? "bg-tertiary text-white hover:bg-brand-deep focus-visible:ring-tertiary/60"
+                  : "bg-white text-brand-deep shadow-md shadow-black/20 hover:-translate-y-0.5 hover:bg-[#f4f7ff] focus-visible:ring-white focus-visible:ring-offset-black/40"
+              }`}
+            >
+              Get a quote
+              <span aria-hidden className="text-[15px] leading-none">
+                →
+              </span>
+            </button>
+          </div>
 
-          <div className="sm:hidden flex flex-1 justify-end items-center">
+          {/* Mobile toggle */}
+          <div className="flex flex-1 justify-end md:hidden">
             <button
               aria-label={toggle ? "Close menu" : "Open menu"}
               aria-expanded={toggle}
-              className="rounded-md p-1.5 text-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/60"
+              className={`rounded-md p-1.5 focus-visible:outline-none focus-visible:ring-2 ${
+                scrolled
+                  ? "text-tertiary focus-visible:ring-tertiary/60"
+                  : "text-white focus-visible:ring-white/70"
+              }`}
               onClick={() => setToggle(!toggle)}
             >
               <MenuToggleIcon open={toggle} className="h-8 w-8" duration={450} />
@@ -94,25 +145,25 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile overlay menu */}
+      {/* Mobile overlay */}
       <div
         className={`${
           toggle ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        } sm:hidden fixed inset-0 z-30 bg-[rgba(26,45,82,0.97)] backdrop-blur-md transition-opacity duration-300`}
+        } fixed inset-0 z-30 bg-[rgba(26,45,82,0.97)] backdrop-blur-md transition-opacity duration-300 md:hidden`}
       >
         <div className="relative flex h-full w-full items-center justify-center px-8">
           <button
             aria-label="Close menu"
-            className="absolute top-6 right-6 rounded-md p-1.5 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+            className="absolute right-6 top-6 rounded-md p-1.5 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
             onClick={() => setToggle(false)}
           >
             <MenuToggleIcon open className="h-9 w-9" duration={450} />
           </button>
-          <ul className="list-none flex flex-col items-center gap-9">
+          <ul className="flex list-none flex-col items-center gap-8">
             {navLinks.map((link) => (
               <li
                 key={link.id}
-                className={`font-lexend text-[26px] font-semibold tracking-wide cursor-pointer transition-colors duration-200 ${
+                className={`cursor-pointer font-lexend text-[24px] font-semibold tracking-wide transition-colors duration-200 ${
                   active === link.title ? "text-[#8fa8da]" : "text-white hover:text-[#8fa8da]"
                 }`}
                 onClick={() => {
@@ -124,16 +175,13 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <a
-                href="#contact"
-                className="font-lexend text-[16px] font-semibold bg-white/15 border border-white/25 text-white px-8 py-3 rounded-xl hover:bg-white/25 transition-colors duration-200 cursor-pointer"
-                onClick={() => {
-                  setToggle(false);
-                  setActive("Contact Us");
-                }}
+              <button
+                type="button"
+                className="cursor-pointer rounded-full bg-white px-8 py-3 font-lexend text-[16px] font-semibold text-brand-deep transition-colors duration-200 hover:bg-[#f4f7ff]"
+                onClick={openQuote}
               >
-                Get Started
-              </a>
+                Get a quote →
+              </button>
             </li>
           </ul>
         </div>

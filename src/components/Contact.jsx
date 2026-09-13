@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { notifications } from '@mantine/notifications';
+import { notifications } from "@mantine/notifications";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -27,19 +27,35 @@ const Contact = () => {
     e.preventDefault();
 
     if (!form.name) {
-      notifications.show({ title: 'Validation Error', message: 'Name is required', color: 'red' });
+      notifications.show({
+        title: "Validation Error",
+        message: "Name is required",
+        color: "red",
+      });
       return;
     }
     if (!form.email) {
-      notifications.show({ title: 'Validation Error', message: 'Email is required', color: 'red' });
+      notifications.show({
+        title: "Validation Error",
+        message: "Email is required",
+        color: "red",
+      });
       return;
     }
     if (!validateEmail(form.email)) {
-      notifications.show({ title: 'Validation Error', message: 'Invalid email format', color: 'red' });
+      notifications.show({
+        title: "Validation Error",
+        message: "Invalid email format",
+        color: "red",
+      });
       return;
     }
     if (!form.message) {
-      notifications.show({ title: 'Validation Error', message: 'Message is required', color: 'red' });
+      notifications.show({
+        title: "Validation Error",
+        message: "Message is required",
+        color: "red",
+      });
       return;
     }
 
@@ -47,8 +63,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_9pvw52e',
-        'template_li79xnj',
+        "service_9pvw52e",
+        "template_li79xnj",
         {
           from_name: form.name,
           to_name: "mPowerRatings",
@@ -56,14 +72,14 @@ const Contact = () => {
           to_email: "info@mpowerratings.co.za",
           message: form.message,
         },
-        'Oey1QJ3g-VzBNrF_V'
+        "Oey1QJ3g-VzBNrF_V"
       )
       .then(() => {
         setLoading(false);
         notifications.show({
-          title: 'Message sent',
-          message: 'Thank you. We will get back to you as soon as possible.',
-          color: 'green',
+          title: "Message sent",
+          message: "Thank you. We will get back to you as soon as possible.",
+          color: "green",
         });
         setForm({ name: "", email: "", message: "" });
       })
@@ -71,9 +87,9 @@ const Contact = () => {
         setLoading(false);
         console.error(error);
         notifications.show({
-          title: 'Error',
-          message: 'Something went wrong. Please try again.',
-          color: 'red',
+          title: "Error",
+          message: "Something went wrong. Please try again.",
+          color: "red",
         });
       });
   };
@@ -82,9 +98,11 @@ const Contact = () => {
     <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] p-8 rounded-2xl"
+        className="flex-[0.75] p-7 sm:p-8 rounded-3xl border border-white/10 bg-white/[0.06] backdrop-blur-md shadow-card"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={`${styles.sectionSubText} !text-[#8fa8da]`}>
+          Get in touch
+        </p>
         <h3 className={styles.sectionHeadTextContact}>Contact Us.</h3>
 
         <form
@@ -137,9 +155,9 @@ const Contact = () => {
           <button
             type="submit"
             disabled={loading}
-            className="self-start bg-tertiary hover:bg-brand-deep disabled:opacity-60 disabled:cursor-not-allowed py-3 px-10 rounded-xl text-white font-lexend font-semibold text-[15px] shadow-lg shadow-tertiary/30 transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 cursor-pointer"
+            className="self-start inline-flex items-center justify-center bg-tertiary hover:bg-brand-deep disabled:opacity-60 disabled:cursor-not-allowed py-3.5 px-10 rounded-full text-white font-lexend font-semibold text-[15px] shadow-lg shadow-tertiary/30 transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 cursor-pointer"
           >
-            {loading ? "Sending…" : "Send Message"}
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </motion.div>
