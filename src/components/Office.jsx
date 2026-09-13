@@ -34,7 +34,7 @@ const Office = () => {
         abyss, never to be seen or heard from again. At mPowerRatings, we provide the
         exceptional service we'd want to experience ourselves!
         <br /><br />
-        We operate in an industry built on trust — from the first contact past your tenth
+        We operate in an industry built on trust, from the first contact past your tenth
         verification with us.{" "}
         <span className="font-semibold text-tertiary">
           At mPowerRatings, you always talk to a human!
@@ -62,7 +62,7 @@ const Office = () => {
           <div className="flex flex-col gap-0.5">
             <span className="font-semibold text-tertiary">Ownership &amp; leadership</span>
             <span>Lizelle de Jager · Magret Mothibi · Jeanet Mahlalela · Jaques Koekemoer</span>
-            <span className="text-[14px] text-primary/80">Verification Managers / SANAS Technical Signatories: Jeanet Mahlalela &amp; Magret Mothibi · Jaques Koekemoer — SANAS Approved Technical Signatory · Head of Sales &amp; Marketing — TBA</span>
+            <span className="text-[14px] text-primary/80">Verification Managers / SANAS Technical Signatories: Jeanet Mahlalela &amp; Magret Mothibi · Jaques Koekemoer (SANAS Approved Technical Signatory) · Head of Sales &amp; Marketing (TBA)</span>
             <span className="mt-1">Lizelle de Jager: 082 784 0123</span>
           </div>
         </ContactItem>

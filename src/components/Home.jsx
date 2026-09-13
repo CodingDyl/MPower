@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <section className="relative w-full min-h-[100svh] overflow-hidden">
-      {/* Atmospheric dark overlay — keeps brand photo, raises contrast like refs */}
+      {/* Atmospheric dark overlay: keeps brand photo, raises contrast like refs */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(200,149,47,0.22)_0%,transparent_55%)]" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/35 sm:from-black/80 sm:via-black/55 sm:to-black/25" />
@@ -56,7 +56,7 @@ const Home = () => {
 
           <p className="mt-4 max-w-xl font-source text-[15px] leading-relaxed text-[#d5ddf0]/90 sm:text-[17px] sm:leading-[1.7]">
             Credible, independent B-BBEE verification and advisory for South African
-            businesses. Tell us your sector — we&apos;ll scope your verification and
+            businesses. Tell us your sector, and we&apos;ll scope your verification and
             get a human back to you.
           </p>
 

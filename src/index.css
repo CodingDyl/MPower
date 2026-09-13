@@ -45,7 +45,7 @@
   scroll-margin-top: 96px;
 }
 
-/* Brand gradient — replaces the old off-brand teal-purple */
+/* Brand gradient: replaces the old off-brand teal-purple */
 .green-pink-gradient {
   background: linear-gradient(135deg, #1a2d52 0%, #334367 55%, #2e5b96 100%);
 }
