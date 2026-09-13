@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="shrink-0 sm:max-w-[200px]">
             <img src={logo} alt="mPowerRatings" className="h-10 object-contain" />
             <p className="mt-4 text-[14px] text-primary/70 leading-relaxed font-source">
-              Ensuring change through Empowerment.
+              Ensuring change through empowerment.
             </p>
             <p className="mt-2 text-[12px] text-tertiary/60 font-semibold font-source tracking-wide uppercase">
               SANAS Accredited · BVA No. 204
