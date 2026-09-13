@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import QuoteModal from "./modals/QuoteModal.jsx";
+import Customers from "./slider/Customers.jsx";
 
 const trustItems = [
   {
@@ -112,6 +113,11 @@ const Home = () => {
             </div>
           ))}
         </motion.div>
+      </div>
+
+      {/* Client logo marquee — always scrolling */}
+      <div className="relative z-10 mt-2 pb-8 sm:pb-10">
+        <Customers />
       </div>
 
       <QuoteModal opened={open} close={() => setOpen(false)} />

@@ -88,29 +88,91 @@
   letter-spacing: -0.01em;
 }
 
-/* Customer logo slider */
-.mainContainer {
-  margin: 10px;
+/* Hero client logo marquee — continuous, no hover pause */
+.client-marquee {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
-.mainContainer .container {
-  background-color: transparent;
-  padding: 1rem 0;
+.client-marquee__viewport {
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
 }
 
-.mainContainer .container img {
-  height: 110px;
+.client-marquee__track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 2.75rem;
+  animation: client-marquee-scroll 42s linear infinite;
+  will-change: transform;
+}
+
+.client-marquee__item {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  text-align: center;
-  filter: grayscale(30%) opacity(0.8);
-  transition: filter 0.2s ease;
+  height: 3.25rem;
 }
 
-.mainContainer .container img:hover {
-  filter: grayscale(0%) opacity(1);
+.client-marquee__item img {
+  height: 2.35rem;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(1.35) opacity(0.55);
+  transition: filter 0.25s ease;
+}
+
+@media (min-width: 640px) {
+  .client-marquee__item {
+    height: 3.75rem;
+  }
+  .client-marquee__item img {
+    height: 2.75rem;
+    max-width: 160px;
+  }
+  .client-marquee__track {
+    gap: 3.5rem;
+  }
+}
+
+@keyframes client-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .client-marquee__track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto;
+    row-gap: 1.25rem;
+  }
 }
 
 /* Mantine carousel indicators override */
