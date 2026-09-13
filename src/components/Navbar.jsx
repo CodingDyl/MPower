@@ -71,13 +71,16 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <a
-                href="#contact"
-                className="bg-tertiary text-white text-[14px] font-semibold px-5 py-2 rounded-lg hover:bg-brand-deep transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/60 focus-visible:ring-offset-2"
-                onClick={() => setActive("Contact Us")}
+              <button
+                type="button"
+                className="bg-tertiary text-white text-[14px] font-semibold px-5 py-2 rounded-full hover:bg-brand-deep transition-colors duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/60 focus-visible:ring-offset-2"
+                onClick={() => {
+                  setActive("Get a quote");
+                  window.dispatchEvent(new Event("mpower:open-quote"));
+                }}
               >
-                Get Started
-              </a>
+                Get a quote
+              </button>
             </li>
           </ul>
 
@@ -124,16 +127,17 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <a
-                href="#contact"
-                className="font-lexend text-[16px] font-semibold bg-white/15 border border-white/25 text-white px-8 py-3 rounded-xl hover:bg-white/25 transition-colors duration-200 cursor-pointer"
+              <button
+                type="button"
+                className="font-lexend text-[16px] font-semibold bg-white text-brand-deep px-8 py-3 rounded-full hover:bg-[#f4f7ff] transition-colors duration-200 cursor-pointer"
                 onClick={() => {
                   setToggle(false);
-                  setActive("Contact Us");
+                  setActive("Get a quote");
+                  window.dispatchEvent(new Event("mpower:open-quote"));
                 }}
               >
-                Get Started
-              </a>
+                Get a quote
+              </button>
             </li>
           </ul>
         </div>
