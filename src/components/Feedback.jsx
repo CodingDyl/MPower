@@ -10,29 +10,31 @@ const Feedback = () => {
   return (
     <>
       <motion.div variants={textVariant}>
-        <p className={styles.sectionSubText}>Our clients</p>
+        <p className={`${styles.sectionSubText} !text-[#8fa8da]`}>
+          Our clients
+        </p>
         <h2 className={styles.sectionHeadTextContact}>
           Trusted by Leading Organisations.
         </h2>
       </motion.div>
 
-      <div className="mt-8">
+      <div className="mt-10">
         <Customers />
       </div>
 
       <motion.div
         variants={textVariant}
-        className="mt-14 flex justify-center items-center text-center"
+        className="mt-16 flex justify-center items-center text-center"
       >
         <h2 className={styles.sectionHeadTextContact}>
           Impartiality &amp; Confidentiality.
         </h2>
       </motion.div>
 
-      <div className="flex mt-6 gap-6 flex-col justify-center text-center items-center">
+      <div className="flex mt-6 gap-5 flex-col justify-center text-center items-center">
         <motion.p
           variants={fadeIn("left", "tween", 0.1, 1)}
-          className="font-source text-white/80 font-semibold md:text-[18px] xs:text-[15px] max-w-3xl leading-[1.8]"
+          className="font-source text-white/80 font-semibold md:text-[18px] xs:text-[15px] max-w-3xl leading-[1.85]"
         >
           MPowerRatings (Pty) Ltd is governed by several principles as
           stipulated by the SANAS R47-03. One of which carries significant

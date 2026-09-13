@@ -1,19 +1,19 @@
-import React, { useRef } from 'react';
-import { SectionWrapper } from '../hoc';
+import React, { useRef } from "react";
+import { SectionWrapper } from "../hoc";
 import { styles } from "../styles.js";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion.js";
-import { Paper, rem, SimpleGrid, Title, useMantineTheme } from '@mantine/core';
+import { Paper, rem, SimpleGrid, Title, useMantineTheme } from "@mantine/core";
 import { IconCheck, IconDownload } from "@tabler/icons-react";
-import { sector1, sector2 } from '../constants';
-import { documents } from '../constants';
+import { sector1, sector2 } from "../constants";
+import { documents } from "../constants";
 import { Carousel } from "@mantine/carousel";
 import { useMediaQuery } from "@mantine/hooks";
-import { IconArrowRight, IconArrowLeft } from '@tabler/icons-react';
+import { IconArrowRight, IconArrowLeft } from "@tabler/icons-react";
 import Autoplay from "embla-carousel-autoplay";
 
 const SectorItem = ({ title }) => (
-  <div className="flex gap-3 items-center mb-3">
+  <div className="flex gap-3.5 items-center py-1.5 mb-1.5">
     <div className="shrink-0 flex justify-center items-center w-7 h-7 rounded-full bg-tertiary">
       <IconCheck size={14} color="#ffffff" strokeWidth={3} />
     </div>
@@ -25,13 +25,13 @@ const SectorItem = ({ title }) => (
 
 const DisplayCard = ({ image, title, download, text }) => (
   <motion.div
-    whileHover={{ y: -6, scale: 1.01 }}
-    transition={{ type: "spring", stiffness: 260, damping: 18 }}
+    whileHover={{ y: -4, scale: 1.005 }}
+    transition={{ type: "spring", stiffness: 280, damping: 22 }}
   >
     <Paper
       shadow="md"
       p="xl"
-      radius="md"
+      radius="lg"
       style={{ backgroundImage: `url(${image})` }}
       className="card"
     >
@@ -43,7 +43,7 @@ const DisplayCard = ({ image, title, download, text }) => (
       <a
         href={download}
         download
-        className="inline-flex items-center gap-2 bg-white/90 hover:bg-white text-tertiary font-semibold text-[13px] px-4 py-2.5 rounded-lg transition-all duration-200 cursor-pointer shadow-md mt-auto"
+        className="inline-flex items-center gap-2 bg-white/90 hover:bg-white text-tertiary font-semibold text-[13px] px-5 py-2.5 rounded-full transition-all duration-200 cursor-pointer shadow-md mt-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tertiary/40"
       >
         <IconDownload size={15} strokeWidth={2} />
         Download
@@ -80,17 +80,17 @@ const Accreditation = () => {
         verticalSpacing="xl"
         className="pt-10"
         breakpoints={[
-          { maxWidth: '62rem', cols: 1, spacing: 'md' },
-          { maxWidth: '48rem', cols: 1, spacing: 'sm' },
-          { maxWidth: '36rem', cols: 1, spacing: 'sm' },
+          { maxWidth: "62rem", cols: 1, spacing: "md" },
+          { maxWidth: "48rem", cols: 1, spacing: "sm" },
+          { maxWidth: "36rem", cols: 1, spacing: "sm" },
         ]}
       >
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center gap-1">
           {sector1.map((sector, index) => (
             <SectorItem key={sector.title} index={index} {...sector} />
           ))}
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center gap-1">
           {sector2.map((sector, index) => (
             <SectorItem key={sector.title} index={index} {...sector} />
           ))}
@@ -99,8 +99,8 @@ const Accreditation = () => {
 
       <Carousel
         id="forms"
-        slideSize={{ base: '100%', sm: '50%' }}
-        slideGap={{ base: rem(2), sm: 'xl' }}
+        slideSize={{ base: "100%", sm: "50%" }}
+        slideGap={{ base: rem(2), sm: "xl" }}
         align="start"
         withIndicators
         loop
@@ -108,7 +108,7 @@ const Accreditation = () => {
         controlSize={mobile ? 44 : 52}
         containScroll="trimSnaps"
         slidesToScroll={mobile ? 1 : 2}
-        className="mt-10"
+        className="mt-12"
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}
@@ -117,8 +117,8 @@ const Accreditation = () => {
         styles={{
           control: {
             backgroundColor: "rgba(255,255,255,0.95)",
-            color: '#334367',
-            border: '1.5px solid rgba(51,67,103,0.2)',
+            color: "#334367",
+            border: "1.5px solid rgba(51,67,103,0.2)",
             boxShadow: "0 8px 20px rgba(16, 13, 37, 0.15)",
             opacity: 1,
             backdropFilter: "blur(4px)",
