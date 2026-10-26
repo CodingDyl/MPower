@@ -62,16 +62,18 @@ const Office = () => {
           <div className="flex flex-col gap-0.5">
             <span className="font-semibold text-tertiary">Ownership &amp; leadership</span>
             <span>Lizelle de Jager · Magret Mothibi · Jeanet Mahlalela · Jaques Koekemoer</span>
-            <span className="text-[14px] text-primary/80">Verification Managers / SANAS Technical Signatories: Jeanet Mahlalela &amp; Magret Mothibi · Jaques Koekemoer — SANAS Approved Technical Signatory · Head of Sales &amp; Marketing — TBA</span>
-            <span className="mt-1">Lizelle de Jager: 082 784 0123</span>
+            <span className="text-[14px] text-primary/80">Verification Managers / SANAS Technical Signatories: Jeanet Mahlalela &amp; Magret Mothibi · Jaques Koekemoer — SANAS Approved Technical Signatory</span>
+            <span className="mt-1">Magret Mothibi: 072 075 0340</span>
+            <span>Jaques Koekemoer: 073 726 1387</span>
+            <span>Jeanet Mahlalela: 073 171 3899</span>
           </div>
         </ContactItem>
         <ContactItem icon={IconMail}>
           <a
-            href="mailto:lizelle@mpowerratings.co.za"
+            href="mailto:jaques@mpowerratings.co.za"
             className="hover:text-tertiary transition-colors duration-200"
           >
-            lizelle@mpowerratings.co.za
+            jaques@mpowerratings.co.za
           </a>
         </ContactItem>
       </motion.div>
