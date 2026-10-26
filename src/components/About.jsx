@@ -54,7 +54,7 @@ const About = () => {
         <span className="font-semibold text-tertiary">
           mPowerRatings is a 51% Black Female Owned, Level 2 B-BBEE Contributor.
         </span>{" "}
-        Ownership: Magret Mothibi, Jeanet Mahlalela, and Jaques Koekemoer.
+        Ownership: Lizelle de Jager, Magret Mothibi, Jeanet Mahlalela, and Jaques Koekemoer.
         To find out more, contact us at{" "}
         <a
           href="tel:0118800060"

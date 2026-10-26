@@ -68,7 +68,7 @@ const Office = () => {
         <ContactItem icon={IconUser} className="md:col-span-2 mt-2">
           <div className="flex flex-col gap-1">
             <span className="font-semibold text-tertiary">Ownership &amp; leadership</span>
-            <span>Magret Mothibi · Jeanet Mahlalela · Jaques Koekemoer</span>
+            <span>Lizelle de Jager · Magret Mothibi · Jeanet Mahlalela · Jaques Koekemoer</span>
             <span className="text-[14px] text-primary/80">
               Verification Managers / SANAS Technical Signatories: Jeanet Mahlalela &amp; Magret Mothibi.
               Jaques Koekemoer, SANAS Approved Technical Signatory.
