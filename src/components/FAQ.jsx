@@ -26,7 +26,7 @@ const FAQ = () => {
                                 <Accordion.Item value="What is Broad-Based Economic Empowerment?">
                                     <Accordion.Control className="text-primary font-extrabold">What is Broad-Based Economic Empowerment?</Accordion.Control>
                                     <Accordion.Panel>
-                                        <p className="text-primary">Black Economic Empowerment (BEE) or Broad-Based Economic Empowerment (BBBEE) is a programme initiated by the South African government to remedy the inequalities of the past, thus giving previously disadvantaged groups, which are South African citizens, economic inclusion – previously not available to them.</p>
+                                        <p className="text-primary">Black Economic Empowerment (BEE) or Broad-Based Economic Empowerment (BBBEE) is a programme initiated by the South African government to remedy the inequalities of the past, thus giving previously disadvantaged groups, which are South African citizens, economic inclusion that was previously not available to them.</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
                             </Accordion>
@@ -52,7 +52,7 @@ const FAQ = () => {
                                 <Accordion.Item value="How long does the verification process take?">
                                     <Accordion.Control className="text-primary font-extrabold">How long does the verification process take?</Accordion.Control>
                                     <Accordion.Panel>
-                                        <p className="text-primary">Standard verifications are completed in 4–12 weeks, depending on data submitted. A fast-track option is available for clients who require a quicker turnaround — this is concluded in a shorter timeframe at a 50% premium on the standard verification invoice.</p>
+                                        <p className="text-primary">Standard verifications are completed in 4 to 12 weeks, depending on data submitted. A fast-track option is available for clients who require a quicker turnaround. This is concluded in a shorter timeframe at a 50% premium on the standard verification invoice.</p>
                                     </Accordion.Panel>
                                 </Accordion.Item>
                             </Accordion>

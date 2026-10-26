@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Link groups — 2-col on mobile, flex row on sm+ */}
+          {/* Link groups: 2-col on mobile, flex row on sm+ */}
           <div className="grid grid-cols-2 sm:flex sm:flex-row gap-8 sm:gap-12">
             {footerLinks.map((group) => (
               <div key={group.title}>
